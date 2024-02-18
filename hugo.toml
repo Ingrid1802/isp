@@ -1,0 +1,6 @@
+baseURL = "https://ingrid1802.github.io/isp/"
+languageCode = "en-us"
+publishDir = "docs"
+title = "ISP - Image and Signal Processing group"
+
+theme = "basic"
