@@ -1,0 +1,186 @@
+{
+  "grupo": "PhD Students",
+  "phd_students": [
+    {
+      "nombre": "Dan López",
+      "imagen": "../images/people/dan.png",
+      "descripcion": "The main goal of my research is to develop automatic algorithms for the detection of clouds from remote sensing images. I mainly focus on the inclusion of prior knowledge and (spatial, temporal, angular) constraints in machine learning classifiers.",
+      "google_scholar": "https://scholar.google.com/citations?user=-wZv_nkAAAAJ&hl=en",
+      "orcid": "https://orcid.org/0000-0003-4442-2507",
+      "linkedin": "https://www.linkedin.com/in/dan-lópez-puigdollers-601630129/",
+      "researchgate": "https://www.researchgate.net/profile/Dan-Lopez-Puigdollers",
+      "twitter": "https://twitter.com/danlopezpuig",
+      "github": "https://github.com/IPL-UV/"
+    },
+    {
+      "nombre": "Cristina Radin",
+      "imagen": "../images/people/cristina.png",
+      "descripcion": "I am working on the development of statistical, physical and hybrid methods to study the regional effects of climate change in the oceans (MALOC project). I have a background in Earth observation data and machine learning methods.",
+      "google_scholar": "https://scholar.google.com/citations?user=tfctuKIAAAAJ&hl=es&authuser=1",
+      "orcid": "https://orcid.org/0000-0003-3969-4583",
+      "twitter": "http://twitter.com/cris_radin",
+      "github": "https://github.com/cristina-radin",
+      "linkedin": "https://www.linkedin.com/in/cristina-radin-20b74b202/",
+      "researchgate": "https://www.researchgate.com/profile/Cristina-Radin-2"
+    },
+    {
+      "nombre": "Javier Martínez Amaya",
+      "imagen": "../images/people/javier.jpg",
+      "descripcion": "I am working on the development of machine learning techniques to assess precursor conditions for extreme hurricane development (MALOPH project). My background is in remote sensing techniques, analysis and applications.",
+      "researchgate": "https://www.researchgate.com/profile/Javier-Martinez-Amaya",
+      "orcid": "https://orcid.org/my-orcid?orcid=0000-0001-6436-3845",
+      "github": "https://github.com/javier3297",
+      "linkedin": "https://www.linkedin.com/in/javier-martinez-amaya-563a141b5/",
+      "twitter": "https://twitter.com/Javi_MartAmaya"
+    },
+    {
+      "nombre": "Paolo Pelucchi",
+      "imagen": "../images/people/paolo.jpg",
+      "descripcion": "I am pursuing my PhD thesis in the iMIRACLI project on hybrid and interpretable machine learning for cloud-aerosol interaction problems."
+    },
+    {
+      "nombre": "Laura Martínez",
+      "imagen": "../images/people/laura.jpg",
+      "descripcion": "I've worked with machine learning methods for crop yield estimation using climate and multi-sensor remote sensing data. My current research is now focused on the use of deep learning to upscale high resolution carbon fluxes.",
+      "researchgate": "https://www.researchgate.com/profile/Laura-Martinez-Ferrer",
+      "linkedin": "https://www.linkedin.com/in/lauferrer/",
+      "orcid": "https://orcid.org/0000-0002-4730-8657",
+      "twitter": "http://twitter.com/MFerrer_Laura"
+    },
+    {
+      "nombre": "Jordi Cortes",
+      "imagen": "../images/people/jordicortes.jpeg",
+      "descripcion": "My research interests focus on kernel methods and the incorporation of physical knowledge in statistical methods to understand and improve Earth system modelling. My current research involves detection and attribution of climate change processes.",
+      "researchgate": "https://www.researchgate.com/profile/Jordi-Cortes-Andres",
+      "orcid": "https://orcid.org/0000-0002-9344-819"
+    },
+    {
+      "nombre": "Mengxue Zhang",
+      "imagen": "../images/people/mengxuex.png",
+      "descripcion": "I'm working on hybrid machine learning for drought and heatwave detection.",
+      "google_scholar": "https://scholar.google.com/citations?hl=zh-CN&user=To-g0UkAAAAJ",
+      "orcid": "https://orcid.org/0000-0002-8587-433",
+      "twitter": "https://twitter.com/mengxue_rs",
+      "github": "https://github.com/snowzm"
+    },
+    {
+      "nombre": "Tristan Williams",
+      "imagen": "../images/people/06_Tristan_ISP_dark.JPG",
+      "descripcion": "I have a background in environmental sciences and remote sensing. I am pursuing a PhD within the XAIDA project where I will be using AI to attribute extreme climate impacts on European ecosystems.",
+      "google_scholar": "https://scholar.google.com/citations?hl=en&user=yoNnOcMAAAAJ",
+      "researchgate": "https://www.researchgate.com/profile/Tristan-Williams-3",
+      "orcid": "https://orcid.org/0000-0003-0532-7013",
+      "linkedin": "https://www.linkedin.com/in/tristan-williams-440143180/",
+      "twitter": "https://twitter.com/Tristan_Earth",
+      "github": "https://github.com/tristaneo"
+    },
+    {
+      "nombre": "Maria Gonzalez",
+      "imagen": "../images/people/mariagonzalez.jpeg",
+      "descripcion": "I'm working on anomaly and extreme event detection from remote sensing images with attention networks and video prediction techniques.",
+      "google_scholar": "https://scholar.google.es/citations?user=kMv4UUsAAAAJ&hl=es&oi=ao",
+      "researchgate": "https://www.researchgate.com/profile/Maria-Gonzalez-Calabuig",
+      "linkedin": "https://www.linkedin.com/in/m-gonzalezcalabuig",
+      "orcid": "https://orcid.org/0000-0003-1254-2387",
+      "personal_website": "https://www.uv.es/goncama6/"
+    },
+    {
+      "nombre": "Jose Maria Tárraga",
+      "imagen": "../images/people/jm.jpeg",
+      "descripcion": "My research interest is to study the impact of climate change on human mobility through machine-learning methods. At ISP I am working on the H2020 DeepCube Climate Induced Migrations use case."
+    },
+    {
+      "nombre": "Kai-Hendrik Cohrs",
+      "imagen": "../images/people/kai.jpeg",
+      "descripcion": "My general research interest lies in Bayesian inference, deep learning and how to incorporate prior knowledge into machine learning models. Currently I am working on hybrid modeling in physics and how to overcome equifinality issues.",
+      "google_scholar": "https://scholar.google.com/citations?user=2NKBJkEAAAAJ&hl=en",
+      "researchgate": "https://www.researchgate.com/profile/Kai-Hendrik-Cohrs",
+      "linkedin": "https://www.linkedin.com/in/kai-hendrik-cohrs-71352a120/",
+      "orcid": "https://orcid.org/0000-0002-2286-7487",
+      "twitter": "https://twitter.com/cohrskai",
+      "github": "https://github.com/KaiHCohrs"
+    },
+    {
+      "nombre": "Enrique Portalés",
+      "imagen": "../images/people/kike.png",
+      "descripcion": "I'm working on novel deep learning architectures for cloud detection from remote sensing images, with special focus on domain adaptation and transfer learning strategies.",
+      "google_scholar": "https://scholar.google.es/citations?user=8NFahPMAAAAJ&hl=ca&oi=ao",
+      "orcid": "https://orcid.org/0000-0002-6537-2062",
+      "twitter": "http://twitter.com/remotekike",
+      "linkedin": "https://www.linkedin.com/in/kike-portal%C3%A9s-86b244190/"
+    },
+    {
+      "nombre": "Jordi Cerdà",
+      "imagen": "../images/people/jordicerda.jpg",
+      "descripcion": "I'm currently working on the development and testing of the CauseMe website, a platform to benchmark causal discovery methods. My background is in physics and data science.",
+      "linkedin": "https://www.linkedin.com/in/jordi-cerd%C3%A0-bautista-93b1091bb/",
+      "github": "https://github.com/jordicbau"
+    },
+    {
+      "nombre": "Pablo Hernández Cámara",
+      "imagen": "../images/people/06_Pablo_THIS.jpeg",
+      "descripcion": "I'm working on the inclusion of equivariant transformations, inspired by the human visual system, in the latest deep learning algorithms, with a focus on computer vision.",
+      "google_scholar": "https://scholar.google.com/citations?user=figpQ9MAAAAJ&hl=es",
+      "linkedin": "https://www.linkedin.com/in/pablohernandezc/?originalSubdomain=es",
+      "github": "https://github.com/pablohc97"
+    },
+    {
+      "nombre": "Jorge Vila Tomás",
+      "imagen": "../images/people/Jorge_Vila.JPG",
+      "descripcion": "I'm currently working on introducing human-like behaviours in deep learning models and measuring perceptual distances. I'm interested as well in generative models and reinforcement learning."
+    },
+    {
+      "nombre": "Jorge García",
+      "imagen": "../images/people/06_JorgeG_ISP_resize.jpg",
+      "descripcion": "My research is about hyperspectral sensors and the estimation of water quality (WQ) parameters in optically complex waters to monitor coastal and inland biogeochemical dynamics, combining traditional bio-optical and radiative transfer models with novel machine learning techniques.",
+      "linkedin": "https://www.linkedin.com/in/jorge-garc%C3%ADa-jim%C3%A9nez-26928033/",
+      "github": "https://github.com/remoteJorge"
+    },
+    {
+      "nombre": "Homer Durand",
+      "imagen": "../images/people/06_Homer_ISP.png",
+      "descripcion": "I have a background in Applied mathematics and Statistics and, actually, my research focuses on Causal Representation Learning and applications for Earth Sciences. I'm particularly interested in methods involving kernels and graphical models.",
+      "orcid": "https://orcid.org/0000-0002-1907-7927",
+      "researchgate": "https://www.researchgate.com/profile/Homer-Durand-2",
+      "linkedin": "www.linkedin.com/in/homer-durand-b575b6160",
+      "github": "https://github.com/homerdurand/",
+      "personal_website": "https://homerdurand.github.io/"
+    },
+    {
+      "nombre": "César Luis Aybar",
+      "imagen": "../images/people/cesar.jpeg",
+      "descripcion": "I am working on the development of machine learning techniques for super-resolution in the ESA OpenSR project. My background is in Earth Observation.",
+      "google_scholar": "https://scholar.google.com/citations?user=rfF51ocAAAAJ",
+      "twitter": "https://twitter.com/csaybar",
+      "github": "https://github.com/csaybar"
+    },
+    {
+      "nombre": "Simon Donike",
+      "imagen": "../images/people/simon.jpg",
+      "descripcion": "I am working on the development of machine learning techniques for super-resolution in the ESA OpenSR project. My background is in Earth Observation.",
+      "google_scholar": "https://scholar.google.com/citations?user=rfF51ocAAAAJ",
+      "twitter": "https://twitter.com/csaybar",
+      "github": "https://github.com/csaybar"
+    },
+    {
+      "nombre": "Deborah Bassotto",
+      "imagen": "../images/people/deborah.png",
+      "descripcion": "I am doing my PhD on causal inference and complex system characterization of climate extremes."
+    },
+    {
+      "nombre": "Moritz Link",
+      "imagen": "../images/people/MoritzLink_Bio.JPG",
+      "descripcion": "My research focuses on modeling, characterizing and understanding microwave sensor data, with focus on soil moisture and vegetation optical depth. I'm actively involved in several ESA projects around the upcoming CIMR mission, and studying information-theoretic measures for observation-simulation intercomparison."
+    },
+    {
+      "nombre": "Inti Luna",
+      "imagen": "../images/people/inti.jpg",
+      "descripcion": "I have a background in environmental sciences and experience working on remote sensing for vegetation studies (crops and forest monitoring). My research interests focus on monitoring and estimation of biophysical properties of vegetation (crop yield, crop water needs, forest biomass, and forest change detection) and soil moisture."
+    },
+    {
+      "nombre": "Is this you?",
+      "imagen": "../images/people/you2.png",
+      "descripcion": "We are always looking for smart people! Send us your resume and ideas of collaboration!"
+    }
+  ]
+}

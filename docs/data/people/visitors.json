@@ -1,0 +1,45 @@
+{
+  "grupo": "Visitors",
+  "visitors": [
+    {
+      "nombre": "Fernando Iglesias",
+      "imagen": "../images/people/nando.png",
+      "descripcion": "Research Associate in the German Aerospace Center (DLR), Ph.D. in Atmospheric Science from Lancaster University, UK. He works on combining causal discovery and deep learning methods to address systematic errors in climate models and improve climate projections."
+    },
+    {
+      "nombre": "Chen Ma",
+      "imagen": "../images/people/chenma.jpeg",
+      "descripcion": "PhD student in Harbin Institute of Technology, now visiting ISP. My research focuses on large foundation models and the processing of hyper/multi-spectral imagery."
+    },
+    {
+      "nombre": "Alice Re",
+      "imagen": "../images/people/alice.png",
+      "descripcion": "I am a PhD student at Politecnico di Torino, Italy. My research focuses on preventive coastal flood assessment and mapping. During my research visit I will work on coastal flood susceptibility integrating remote sensing, GIS and ML."
+    },
+    {
+      "nombre": "Francesco Martinuzzi",
+      "imagen": "../images/people/francesco.jpg",
+      "descripcion": "PhD student at the Center for Scalable Data Analytics and Artificial Intelligence (ScaDS.AI) and the Remote Sensing Center for Earth system research (RSC4Earth), Leipzig University. My research interests lie in the exploration of nonlinear dynamics with machine learning, with a focus on applications to Earth sciences."
+    },
+    {
+      "nombre": "Shahine Bouabid",
+      "imagen": "../images/people/bouabid.jpg",
+      "descripcion": "I am a final year PhD student in the Oxford Computational Statistics and Machine Learning group at the University of Oxford. I am interested in developing simple and interpretable statistical ML methodologies to address challenges that arise in climate science, in particular on climate model emulation using physically-informed models and statistical downscaling. I use mostly kernel methods and Gaussian processes."
+    },
+    {
+      "nombre": "Jessenia Gonzalez",
+      "imagen": "../images/people/jessenia.jpg",
+      "descripcion": "I am a PhD student at Leipzig University centered on understanding aerosol-cloud interactions directly from satellite observations using ML, bypassing the uncertainties inherent in traditional retrieval methods."
+    },
+    {
+      "nombre": "Ioannis Prapas",
+      "imagen": "../images/people/ioannis.jpg",
+      "descripcion": "I'm a researcher at the Orion Lab, National Observatory of Athens and the University of Valencia. I am interested in Deep Learning for the Earth System sciences, aiming to improve fire prediction systems."
+    },
+    {
+      "nombre": "Is this you?",
+      "imagen": "../images/people/you2.png",
+      "descripcion": "We are always happy to host smart people! Send us your resume and ideas of collaboration!"
+    }
+  ]
+}

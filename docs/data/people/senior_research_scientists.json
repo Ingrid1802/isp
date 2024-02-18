@@ -1,0 +1,25 @@
+{
+  "grupo": "Senior research scientists",
+  "senior_research_scientists": [
+    {
+      "nombre": "Álvaro Moreno Martínez",
+      "imagen": "../images/people/alvaro.jpg",
+      "descripcion": "My research has been mainly focused on remote sensing applications in vegetation. I have been actively involved in the development of physical and statistical models and the implementation of operational methodologies for the study of vegetation cover through satellite imagery at different spatial/temporal scales.",
+      "google_scholar": "https://scholar.google.es/citations?user=vmedAiwAAAAJ&hl=es",
+      "researchgate": "https://www.researchgate.net/profile/Alvaro-Moreno-2",
+      "linkedin": "https://www.linkedin.com/in/alvaro-moreno-mart%C3%ADnez-bb193229/?originalSubdomain=es",
+      "orcid": "https://orcid.org/0000-0003-2990-7768"
+    },
+    {
+      "nombre": "Veronica Nieves - Distinguished Researcher",
+      "imagen": "../images/people/veronica.jpg",
+      "descripcion": "My research at the interface between ocean sciences and climate informatics focuses on the development of the next generation of advanced algorithms to better understand our changing oceans and evaluate potential future climate risks. Research activities can be followed on <a href='https://www.aiforoceans.org' target='_blank'>I4OCEANS</a>",
+      "google_scholar": "https://scholar.google.com/citations?user=ijT_5O4AAAAJ&hl=en",
+      "researchgate": "https://www.researchgate.net/profile/Veronica-Nieves-2",
+      "orcid": "https://orcid.org/0000-0003-0024-8383",
+      "twitter": "https://twitter.com/vero_u_nieves?lang=cs",
+      "github": "https://github.com/IPL-UV/",
+      "personal_website": "https://www.aiforoceans.org"
+    }
+  ]
+}

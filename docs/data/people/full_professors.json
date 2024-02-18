@@ -1,0 +1,41 @@
+ {
+  "grupo": "Full Professors",
+  "full_professors": [
+    {
+      "nombre": "Gustau Camps-Valls",
+      "imagen": "../images/people/gus18.png",
+      "descripcion": "My research is related to statistical learning for modeling and understanding the Earth system",
+      "google_scholar": "https://scholar.google.com/citations?user=6mgnauMAAAAJ",
+      "orcid": "http://orcid.org/0000-0003-1683-2138",
+      "twitter": "http://twitter.com/isp_uv_es",
+      "github": "https://github.com/IPL-UV/",
+      "semantic_scholar": "https://www.semanticscholar.org/author/1397959153",
+      "personal_uv": "https://www.uv.es/gcamps/"
+    },
+    {
+      "nombre": "Jesús Malo",
+      "imagen": "../images/people/jesus.jpg",
+      "descripcion": "I'm interested in understanding human vision from information theoretic principles. This statistical view has implications in experimental and computational neuroscience.",
+      "google_scholar": "https://scholar.google.es/citations?user=0pgrklEAAAAJ&hl=es",
+      "researchgate": "https://www.researchgate.net/profile/Jesus-Malo",
+      "orcid": "https://orcid.org/0000-0002-5684-8591",
+      "twitter": "https://twitter.com/jesusmalo32",
+      "github": "https://github.com/IPL-UV/",
+      "personal_uv": "https://www.uv.es/jmalo/",
+      "enlace_ex_cathedra": "excathedra.html"
+    },
+    {
+      "nombre": "Luis Gómez-Chova",
+      "imagen": "../images/people/luis.jpg",
+      "descripcion": "My interests are related to machine learning and signal and image processing. The application domains are remote sensing data analysis and hyperspectral images with special focus on cloud screening.",
+      "google_scholar": "https://scholar.google.com/citations?user=7LQsYOcAAAAJ&hl=en",
+      "researchgate": "https://www.researchgate.net/profile/Luis-Gomez-Chova",
+      "linkedin": "https://www.linkedin.com/in/luis-gomez-chova",
+      "orcid": "https://orcid.org/0000-0003-3924-1269",
+      "twitter": "http://twitter.com/isp_uv_es",
+      "github": "https://github.com/IPL-UV/",
+      "personal_uv": "https://www.uv.es/chovago/"
+    }
+  ]
+}
+
