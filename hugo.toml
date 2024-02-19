@@ -3,4 +3,4 @@ languageCode = "en-us"
 publishDir = "docs"
 title = "ISP - Image and Signal Processing group"
 
-theme = "basic"
+theme = "isp_uv_es"

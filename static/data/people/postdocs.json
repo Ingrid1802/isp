@@ -2,9 +2,9 @@
   "grupo": "Postdocs",
   "postdocs": [
     {
-      "nombre": "Miguel Ángel Fernández Torres",
-      "imagen": "../images/people/miguelangel.jpg",
-      "descripcion": "My research is related to the design of deep learning models and machine attention mechanisms to be deployed in anomaly and extreme event detection in the Earth sciences.",
+      "name": "Miguel Ángel Fernández Torres",
+      "image": "miguelangel.png",
+      "description": "My research is related to the design of deep learning models and machine attention mechanisms to be deployed in anomaly and extreme event detection in the Earth sciences.",
       "google_scholar": "https://scholar.google.com/citations?user=YxMTPqEAAAAJ&hl=es",
       "researchgate": "https://www.researchgate.net/profile/Miguel-Angel-Fernandez-Torres",
       "linkedin": "https://www.linkedin.com/in/miguelangelft/?originalSubdomain=es",
@@ -13,9 +13,9 @@
       "personal_website": "https://miguelangelft.github.io/"
     },
     {
-      "nombre": "Gherardo Varando",
-      "imagen": "../images/people/gherardo.jpg",
-      "descripcion": "My research focus on probabilistic graphical models: Bayesian networks/DAG, Gaussian graphical models, staged event trees. Recently I am interested in structural recovery from spatio-temporal data, causal discovery and applications for the Earth sciences.",
+      "name": "Gherardo Varando",
+      "image": "gherardo.png",
+      "description": "My research focus on probabilistic graphical models: Bayesian networks/DAG, Gaussian graphical models, staged event trees. Recently I am interested in structural recovery from spatio-temporal data, causal discovery and applications for the Earth sciences.",
       "google_scholar": "https://scholar.google.es/citations?user=ALjiTg0AAAAJ&hl=en",
       "researchgate": "https://www.researchgate.net/profile/Gherardo-Varando",
       "orcid": "https://orcid.org/0000-0002-6708-1103",
@@ -23,9 +23,9 @@
       "personal_website": "https://gherardovarando.github.io/"
     },
     {
-      "nombre": "Eva Sevillano Marco",
-      "imagen": "../images/people/eva_profile.jpg",
-      "descripcion": "ISP Coordination & Project Manager. Ecologist by training. My research interests lie in Remote Sensing & GIS applications: multisensor support to forestry inventories, agriculture, land cover and change detection, geospatial data quality, Earth Observation products & services, etc. Collaborations with outstanding research groups and institutions, an asset. Onboard for new challenges!",
+      "name": "Eva Sevillano Marco",
+      "image": "eva_profile.png",
+      "description": "ISP Coordination & Project Manager. Ecologist by training. My research interests lie in Remote Sensing & GIS applications: multisensor support to forestry inventories, agriculture, land cover and change detection, geospatial data quality, Earth Observation products & services, etc. Collaborations with outstanding research groups and institutions, an asset. Onboard for new challenges!",
       "researchgate": "https://www.researchgate.net/profile/Eva-Sevillano",
       "linkedin": "https://www.linkedin.com/in/eva-sevillano-marco/?originalSubdomain=es",
       "orcid": "http://orcid.org/0000-0002-5684-243X",
@@ -33,26 +33,26 @@
       "personal_website": "https://www.google.com/maps/d/u/2/edit?mid=1DH15FL1CZ437amSOItODq4OsSBI&usp=sharing"
     },
     {
-      "nombre": "Jorge Vicent Servera",
-      "imagen": "../images/people/06_vicen_ISP.jpg",
-      "descripcion": "My interests are related to atmospheric radiative transfer models, statistical regression emulation methods and image processing algortihms development and optimization. The application domains are remote sensing data analysis and hyperspectral images with special focus on atmospheric correction and scene/satellite simulation",
+      "name": "Jorge Vicent Servera",
+      "image": "06_vicen_ISP.png",
+      "description": "My interests are related to atmospheric radiative transfer models, statistical regression emulation methods and image processing algortihms development and optimization. The application domains are remote sensing data analysis and hyperspectral images with special focus on atmospheric correction and scene/satellite simulation",
       "researchgate": "https://www.researchgate.net/profile/Jorge-Vicent",
       "linkedin": "https://www.linkedin.com/in/jorviser/",
       "github": "https://gitlab.com/jorge.vicent/"
     },
     {
-      "nombre": "Óscar Pellicer",
-      "imagen": "../images/people/06_ISP_Oscar.jpg",
-      "descripcion": "During my PhD I employed machine learning for solving medical problems, focusing on medical image analysis for prostate cancer detection. I will now be applying the same techniques to satellite imaging, focusing on developing and explaining deep models for forecasting tasks.",
+      "name": "Óscar Pellicer",
+      "image": "06_ISP_Oscar.png",
+      "description": "During my PhD I employed machine learning for solving medical problems, focusing on medical image analysis for prostate cancer detection. I will now be applying the same techniques to satellite imaging, focusing on developing and explaining deep models for forecasting tasks.",
       "google_scholar": "https://scholar.google.com/citations?user=CCFJshwAAAAJ",
       "orcid": "https://orcid.org/0000-0002-0104-1029",
       "linkedin": "https://www.linkedin.com/in/oscar-jos%C3%A9-pellicer-valero-9baab9128",
       "github": "https://github.com/OscarPellicer"
     },
     {
-      "nombre": "Gonzalo Mateo-García",
-      "imagen": "../images/people/gonzalo.jpg",
-      "descripcion": "My background is in the field of applied machine learning. I am specially interested in applications to natural sciences like remote sensing and weather and energy forecasting. Currently I am working in transfer learning with convolutional neural networks applied to cloud and flood segmentation.",
+      "name": "Gonzalo Mateo-García",
+      "image": "gonzalo.png",
+      "description": "My background is in the field of applied machine learning. I am specially interested in applications to natural sciences like remote sensing and weather and energy forecasting. Currently I am working in transfer learning with convolutional neural networks applied to cloud and flood segmentation.",
       "google_scholar": "https://scholar.google.com/citations?user=ZwlGpiUAAAAJ&hl=en",
       "linkedin": "https://www.linkedin.com/in/gonzalo-mateo-garcia/",
       "orcid": "https://orcid.org/0000-0002-0569-393X",
@@ -61,9 +61,9 @@
       "personal_website": "http://www.uv.es/gonmagar/"
     },
     {
-      "nombre": "Vassilis Sitokonstantinou",
-      "imagen": "../images/people/06_Vassilis_sito_ISP.jpg",
-      "descripcion": "I develop machine learning methods that incorporate causality and explainability, using Earth observations, climate data, and land use information. I analyze the impact of agricultural practices on ecosystem services and attribute crop failures to climate events. My goal is to provide data-driven insights for sustainable agriculture, towards expanding the global carbon sink while addressing global food demand.",
+      "name": "Vassilis Sitokonstantinou",
+      "image": "06_Vassilis_sito_ISP.png",
+      "description": "I develop machine learning methods that incorporate causality and explainability, using Earth observations, climate data, and land use information. I analyze the impact of agricultural practices on ecosystem services and attribute crop failures to climate events. My goal is to provide data-driven insights for sustainable agriculture, towards expanding the global carbon sink while addressing global food demand.",
       "google_scholar": "https://scholar.google.gr/citations?user=8WCaLYQAAAAJ&hl=en",
       "linkedin": "https://www.linkedin.com/in/vsito/",
       "orcid": "https://orcid.org/0000-0001-5506-2872",
@@ -71,23 +71,23 @@
       "researchgate": "https://www.researchgate.net/profile/Vasileios-Sitokonstantinou"
     },
     {
-      "nombre": "Nate Mankovich",
-      "imagen": "../images/people/06_Nate_ISP.jpg",
-      "descripcion": "I hold a PhD in Mathematics and am interested in applying my mathematical expertise towards utilizing manifold structures and causal relationships to develop dimensionality reduction algorithms for multimodal spatio-temporal datasets.",
+      "name": "Nate Mankovich",
+      "image": "06_Nate_ISP.png",
+      "description": "I hold a PhD in Mathematics and am interested in applying my mathematical expertise towards utilizing manifold structures and causal relationships to develop dimensionality reduction algorithms for multimodal spatio-temporal datasets.",
       "google_scholar": "https://scholar.google.com/citations?user=d9V9fdkAAAAJ&hl=en",
       "linkedin": "https://www.linkedin.com/in/nathan-mankovich-b1293717/",
       "github": "https://github.com/nmank",
       "personal_website": "https://natemankovich.weebly.com/"
     },
     {
-      "nombre": "Is this you?",
-      "imagen": "../images/people/you2.png",
-      "descripcion": "We are always looking for smart people! Send us your resume and ideas of collaboration!"
+      "name": "Is this you?",
+      "image": "you2.png",
+      "description": "We are always looking for smart people! Send us your resume and ideas of collaboration!"
     },
     {
-      "nombre": "Emiliano Díaz",
-      "imagen": "../images/people/emiliano.jpg",
-      "descripcion": "My research interests include kernel methods, graphical models and causality, with the focus on Earth science applications."
+      "name": "Emiliano Díaz",
+      "image": "emiliano.png",
+      "description": "My research interests include kernel methods, graphical models and causality, with the focus on Earth science applications."
     }
   ]
 }
