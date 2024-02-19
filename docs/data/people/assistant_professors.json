@@ -2,16 +2,16 @@
   "grupo": "Assistant Professors",
   "assistant_professors": [
     {     
-    "nombre": "Julia Amorós",
-    "imagen": "../images/people/julia.jpg",
-    "descripcion": "I'm working on image fusion, developing downscaling and pansharpening methods. The goal is to tackle multitemporal image fusion and change detection problems with improved resolution.",
+    "name": "Julia Amorós",
+    "image": "julia.jpg",
+    "description": "I'm working on image fusion, developing downscaling and pansharpening methods. The goal is to tackle multitemporal image fusion and change detection problems with improved resolution.",
     "google_scholar": "https://scholar.google.es/citations?hl=es&user=pj5R_mQAAAAJ",
     "orcid": "https://orcid.org/0000-0003-0876-8340"
     },
     {
-    "nombre": "Adrián Pérez-Suay",
-    "imagen": "../images/people/Adrian2018.jpg",
-    "descripcion": "The topic of my thesis was Distance Metric Learning. Currently, I am working on kernel methods, dependence estimation and Machine Learning in general. I am interested on the applications of Machine Learning techniques to solve the Remote Sensing challenges.",
+    "name": "Adrián Pérez-Suay",
+    "image": "Adrian2018.png",
+    "description": "The topic of my thesis was Distance Metric Learning. Currently, I am working on kernel methods, dependence estimation and Machine Learning in general. I am interested on the applications of Machine Learning techniques to solve the Remote Sensing challenges.",
     "google_scholar": "https://scholar.google.es/citations?user=9GfwpZ4AAAAJ&hl=es&authuser=1&oi=ao",
     "orcid": "https://orcid.org/0000-0002-8258-4454",
     "twitter": "https://twitter.com/PerezSuay",
@@ -20,21 +20,21 @@
     "personal_website": "http://www.uv.es/pesuaya"
     },
     {
-    "nombre": "José J. Esteve-Taboada",
-    "imagen": "../images/people/joseesteve.png",
-    "descripcion": "I am developing computational models of the visual function based on functional Magnetic Resonance Imaging, psychophysics, and image statistics."
+    "name": "José J. Esteve-Taboada",
+    "image": "joseesteve.png",
+    "description": "I am developing computational models of the visual function based on functional Magnetic Resonance Imaging, psychophysics, and image statistics."
     },
     {
-    "nombre": "Valero Laparra",
-    "imagen": "../images/people/valero.jpg",
-    "descripcion": "I'm working in image statistics and vision science. I have developed several methods for density estimation, measure independence, manifold learning and visual quality assessment.",
+    "name": "Valero Laparra",
+    "image": "valero.png",
+    "description": "I'm working in image statistics and vision science. I have developed several methods for density estimation, measure independence, manifold learning and visual quality assessment.",
     "google_scholar": "https://scholar.google.com/citations?user=dNt_xikAAAAJ&hl=ca",
     "orcid": "https://orcid.org/0000-0001-7531-9890"
     },
     {
-    "nombre": "Ana B. Ruescas",
-    "imagen": "../images/people/06_AnaBR_ISP.png",
-    "descripcion": "I am a data scientist and project manager. As a remote sensing specialist I have experience in several application areas like ocean colour and thermal algorithm development and validation.",
+    "name": "Ana B. Ruescas",
+    "image": "06_AnaBR_ISP.png",
+    "description": "I am a data scientist and project manager. As a remote sensing specialist I have experience in several application areas like ocean colour and thermal algorithm development and validation.",
     "google_scholar": "https://scholar.google.com/citations?user=G-hjVSkAAAAJ&hl=en",
     "researchgate": "https://www.researchgate.com/profile/Ana-Ruescas",
     "linkedin": "https://www.linkedin.com/in/ana-b-ruescas-5a867518/",
@@ -42,9 +42,9 @@
     "personal_website": "https://www.uv.es/uvweb/universidad/es/ficha-persona-1285950309813.html?p2=bruescas"
     },
     {
-    "nombre": "José Enrique Adsuara",
-    "imagen": "../images/people/jose.png",
-    "descripcion": "Currently, I am working on learning parameters of differential equations, HPC for linear solvers, and causality. I am interested in machine learning, especially statistical learning and deep neural networks.",
+    "name": "José Enrique Adsuara",
+    "image": "jose.png",
+    "description": "Currently, I am working on learning parameters of differential equations, HPC for linear solvers, and causality. I am interested in machine learning, especially statistical learning and deep neural networks.",
     "google_scholar": "https://scholar.google.es/citations?user=emaUK3AAAAAJ&hl=es",
     "orcid": "https://orcid.org/0000-0002-3842-965X",
     "linkedin": "https://www.linkedin.com/in/jose-adsuara-fuster-7508a957/",
@@ -52,9 +52,9 @@
     "personal_website": "https://jadsuafu.wordpress.com/"
     },
     {
-    "nombre": "Roberto Fernandez-Moran",
-    "imagen": "../images/people/roberto.jpg",
-    "descripcion": "My current research focuses on cloud screening in multispectral imagery using machine learning techniques. Previously I was also involved in the algorithm improvement for the retrieval of soil moisture and vegetation parameters from microwave observations.",
+    "name": "Roberto Fernandez-Moran",
+    "image": "roberto.png",
+    "description": "My current research focuses on cloud screening in multispectral imagery using machine learning techniques. Previously I was also involved in the algorithm improvement for the retrieval of soil moisture and vegetation parameters from microwave observations.",
     "google_scholar": "https://scholar.google.com/citations?user=q9Bp1ekAAAAJ&hl=es&oi=ao",
     "researchgate": "https://www.researchgate.com/profile/Roberto-Fernandez-Moran",
     "linkedin": "https://www.linkedin.com/in/roberto-fernandez-moran/details/experience/",
@@ -63,9 +63,9 @@
     "personal_website": "https://www.uv.es/uvweb/college/en/profile-1285950309813.html?p2=fermoro&idA=truel"
     },
     {
-    "nombre": "Maria Piles",
-    "imagen": "../images/people/maria.png",
-    "descripcion": "My research interests include microwave remote sensing, estimation of soil moisture and vegetation biogeophysical parameters and development of multisensor techniques for enhanced retrievals with focus on agriculture, forestry, wildfire prediction, extreme detection, and climate studies.",
+    "name": "Maria Piles",
+    "image": "maria.png",
+    "description": "My research interests include microwave remote sensing, estimation of soil moisture and vegetation biogeophysical parameters and development of multisensor techniques for enhanced retrievals with focus on agriculture, forestry, wildfire prediction, extreme detection, and climate studies.",
     "google_scholar": "https://scholar.google.es/citations?user=KTva-HMAAAAJ&hl=es",
     "researchgate": "https://www.researchgate.com/profile/Maria-Piles-2",
     "linkedin": "https://www.linkedin.com/in/maria-piles-33a26867/?originalSubdomain=es",

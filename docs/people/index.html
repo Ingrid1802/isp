@@ -185,10 +185,10 @@ async function loadAllData() {
     "visitors",
     "alumni"
   ];
-  const basePath = '/isp/data/people/';
+  const dataBasePath = '/isp/data/people/';
 
   for (const group of groups) {
-    const filePath = `${basePath}${group}.json`;
+    const filePath = `${dataBasePath}${group}.json`;
     const data = await loadData(filePath);
 
     const container = document.querySelector('.content-container');
@@ -207,18 +207,20 @@ async function loadAllData() {
     cardContainer.style.marginLeft = '3%';
     container.appendChild(cardContainer);
 
+    const basePath = '../images/people/'; 
+
     data[group].forEach(person => {
       const card = document.createElement('div');
       card.classList.add('card', 'mb-3');
       card.innerHTML = `
         <div class="row g-0">
-          <div class="col-md-4">
-            <img src="${person.imagen}" class="img-fluid rounded-start" alt="Imagen de ${person.nombre}" style="height: 200px;">
+          <div class="col-md-3">
+            <img src="${basePath + person.image}" class="img-fluid rounded-start" alt="Imagen de ${person.name}" style="height: 200px; width:140px">
           </div>
-          <div class="col-md-8">
+          <div class="col-md-9">
             <div class="card-body" style="max-height: 200px; overflow-y: auto;">
-              <h5 class="card-title" style="font-size: 1em;">${person.nombre}</h5>
-              <p class="card-text" style="font-size: 0.85em;">${person.descripcion}</p>
+              <h5 class="card-title" style="font-size: 1em;">${person.name}</h5>
+              <p class="card-text" style="font-size: 0.85em;">${person.description}</p>
               <div class="card-links">
                 ${person.google_scholar ? `<a href="${person.google_scholar}"><img src="https://www.uv.es/gcamps/images/icons/gscholar.png" height="25" width="25"></a>` : ''}
                 ${person.orcid ? `<a href="${person.orcid}"><img src="https://www.uv.es/gcamps/images/icons/orcid.png" height="25" width="25"></a>` : ''}
@@ -298,6 +300,8 @@ document.addEventListener('DOMContentLoaded', loadAllData);
     border-radius: 5px;  
   }
   </style>
+  
+
 
   </main>
 </body>
