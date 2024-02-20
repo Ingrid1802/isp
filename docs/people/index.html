@@ -25,16 +25,14 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
       <ul class="navbar-nav mx-auto mb-lg-0">
-
-
-        <li class="nav-item px-2" style="font-size: 1.4em; margin-top: -5px;">
+        <li class="nav-item px-2 " style="font-size: 1.4em; margin-top: -5px; padding: 0.4rem">
           <a class="nav-link active a" aria-current="page" href="/isp/">ISP</a>
         </li>
-        <li class="nav-item px-2 li">
+        <li class="nav-item px-2 li nav-item-highlight">
           <a class="nav-link active a" aria-current="page" href="/isp/people/">People</a>
         </li>
 
-        <li class="nav-item dropdown px-2 li">
+        <li class="nav-item dropdown px-2 nav-item-highlight">
           <a class="nav-link dropdown-toggle active a" href="#" role="button" data-bs-toggle="dropdown"
             aria-expanded="false">
             Research
@@ -50,13 +48,13 @@
             <li><a class="dropdown-item a" href="#">Social science</a></li>
           </ul>
         </li>
-        <li class="nav-item px-2 li">
+        <li class="nav-item px-2 nav-item-highlight">
           <a class="nav-link active a" aria-current="page" href="/isp/projects/">Projects</a>
         </li>
-        <li class="nav-item px-2 li">
+        <li class="nav-item px-2 nav-item-highlight">
           <a class="nav-link active a" aria-current="page" href="/isp/facilities/">Facilities</a>
         </li>
-        <li class="nav-item dropdown px-2 li">
+        <li class="nav-item dropdown px-2 nav-item-highlight">
           <a class="nav-link dropdown-toggle active a" href="#" role="button" data-bs-toggle="dropdown"
             aria-expanded="false">
             Publications
@@ -73,25 +71,25 @@
             <li><a class="dropdown-item a" href="#">Theses</a></li>
           </ul>
         </li>
-        <li class="nav-item px-2 li">
+        <li class="nav-item px-2 nav-item-highlight">
           <a class="nav-link active a" aria-current="page" href="/isp/code/">Code</a>
         </li>
-        <li class="nav-item px-2 li">
+        <li class="nav-item px-2 nav-item-highlight">
           <a class="nav-link active a" aria-current="page" href="/isp/data/">Data</a>
         </li>
-        <li class="nav-item px-2 li">
+        <li class="nav-item px-2 nav-item-highlight">
           <a class="nav-link active a" aria-current="page" href="/isp/seminars/">Seminars</a>
         </li>
-        <li class="nav-item px-2 li">
+        <li class="nav-item px-2 nav-item-highlight">
           <a class="nav-link active a" aria-current="page" href="/isp/courses/">Courses</a>
         </li>
-        <li class="nav-item px-2 li">
+        <li class="nav-item px-2 nav-item-highlight">
           <a class="nav-link active a" aria-current="page" href="/isp/collaborators/">Collaborators</a>
         </li>
-        <li class="nav-item px-2 li">
+        <li class="nav-item px-2 nav-item-highlight">
           <a class="nav-link active a" aria-current="page" href="/isp/news/">News</a>
         </li>
-        <li class="nav-item px-2 li ">
+        <li class="nav-item px-2 nav-item-highlight">
           <a class="nav-link active a" aria-current="page" href="/isp/contact/">Contact</a>
         </li>
 
@@ -100,41 +98,9 @@
   </div>
 </nav>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <style>
   .navbar {
+    --bs-navbar-padding-y: 0rem !important; 
     background-color: #222 !important;
   }
 
@@ -146,15 +112,6 @@
     color: #fff !important;
   }
 
-  li .a:hover {
-    color: #fff !important;
-  }
-
-  .li:hover {
-    background-color: #4b3ff5;
-    color: #fff !important;
-  }
-
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   }
@@ -163,6 +120,37 @@
   .navbar-toggler {
     border: none;
   }
+
+  .navbar-toggler:focus {
+  outline: none;
+}
+
+  .nav-item-highlight{
+    padding: 0.4rem;
+  }
+  .nav-item-highlight:hover{
+    background-color: #2d70aa !important;
+  }
+
+  .dropdown-menu {
+    background-color: #fff !important;
+    color: #000 !important;
+  }
+
+  .dropdown-item:hover {
+    background-color: #2d70aa !important;
+    color: #fff !important;
+  }
+
+  .navbar-nav li.nav-item .nav-link,
+  .dropdown-menu .dropdown-item {
+    transition: color 0.3s, background-color 0.3s;
+  }
+
+  .navbar-toggler:focus {
+  box-shadow: none !important;
+  }
+
 </style>
   <main>
       
@@ -173,7 +161,6 @@ async function loadData(filePath) {
   const response = await fetch(filePath);
   return response.json();
 }
-
 async function loadAllData() {
   const groups = [
     "full_professors", 
@@ -219,22 +206,22 @@ async function loadAllData() {
           </div>
           <div class="col-md-9">
             <div class="card-body" style="max-height: 200px; overflow-y: auto;">
-              <h5 class="card-title" style="font-size: 1em;">${person.name}</h5>
-              <p class="card-text" style="font-size: 0.85em;">${person.description}</p>
+              <h5 class="card-title" style="font-size: 1.1em;">${person.name}</h5>
+              <p class="card-text" style="font-size: 0.95em;">${person.description}</p>
               <div class="card-links">
-                ${person.google_scholar ? `<a href="${person.google_scholar}"><img src="https://www.uv.es/gcamps/images/icons/gscholar.png" height="25" width="25"></a>` : ''}
-                ${person.orcid ? `<a href="${person.orcid}"><img src="https://www.uv.es/gcamps/images/icons/orcid.png" height="25" width="25"></a>` : ''}
-                ${person.twitter ? `<a href="${person.twitter}"><img src="https://www.uv.es/gcamps/images/icons/twitter.png" height="24" width="30"></a>` : ''}
-                ${person.github ? `<a href="${person.github}"><img src="https://www.uv.es/gcamps/images/icons/github.png" height="25" width="25"></a>` : ''}
-                ${person.semantic_scholar ? `<a href="${person.semantic_scholar}"><img src="https://www.uv.es/gcamps/images/icons/semantic.png" height="25" width="25"></a>` : ''}
-                ${person.researchgate ? `<a href="${person.researchgate}"><img src="https://www.uv.es/gcamps/images/icons/rg.png" height="25" width="25"></a>` : ''}
-                ${person.personal_uv ? `<a href="${person.personal_uv}" class="btn btn-xs btn-info" aria-label="Left Align">UV</a>` : ''}
-                ${person.linkedin ? `<a href="${person.linkedin}"><img src="https://www.uv.es/gcamps/images/icons/linkedin.png" height="25" width="25"></a>` : ''}
-                ${person.ieee ? `<a href="${person.ieee}"><button type="button" class="btn btn-xs btn-success" aria-label="Left Align">IEEE</button></a>` : ''}
-                ${person.dblp ? `<a href="${person.dblp}"><button type="button" class="btn btn-xs btn-danger" aria-label="Left Align">dblp</button></a>` : ''}
-                ${person.personal_website ? `<a href="${person.personal_website}"><button type="button" class="btn btn-xs btn-info" aria-label="Left Align">Website</button></a>` : ''}
-                ${person.causality ? `<a href="${person.causality}"><button type="button" class="btn btn-xs btn-success" aria-label="Left Align">Causality</button></a>` : ''}
-                ${person.manifold_learning ? `<a href="${person.manifold_learning}"><button type="button" class="btn btn-xs btn-danger" aria-label="Left Align">Manifold Learning</button></a>` : ''}
+                ${person.social_networks.google_scholar && person.social_networks.google_scholar !== 'none' ? `<a href="${person.social_networks.google_scholar}"><img src="https://www.uv.es/gcamps/images/icons/gscholar.png" height="25" width="25"></a>` : ''}
+                ${person.social_networks.orcid && person.social_networks.orcid !== 'none' ? `<a href="${person.social_networks.orcid}"><img src="https://www.uv.es/gcamps/images/icons/orcid.png" height="25" width="25"></a>` : ''}
+                ${person.social_networks.twitter && person.social_networks.twitter !== 'none' ? `<a href="${person.social_networks.twitter}"><img src="https://www.uv.es/gcamps/images/icons/twitter.png" height="24" width="30"></a>` : ''}
+                ${person.social_networks.github && person.social_networks.github !== 'none' ? `<a href="${person.social_networks.github}"><img src="https://www.uv.es/gcamps/images/icons/github.png" height="25" width="25"></a>` : ''}
+                ${person.social_networks.semantic_scholar && person.social_networks.semantic_scholar !== 'none' ? `<a href="${person.social_networks.semantic_scholar}"><img src="https://www.uv.es/gcamps/images/icons/semantic.png" height="25" width="25"></a>` : ''}
+                ${person.social_networks.researchgate && person.social_networks.researchgate !== 'none' ? `<a href="${person.social_networks.researchgate}"><img src="https://www.uv.es/gcamps/images/icons/rg.png" height="25" width="25"></a>` : ''}
+                ${person.social_networks.personal_uv && person.social_networks.personal_uv !== 'none' ? `<a href="${person.social_networks.personal_uv}" class="btn btn-xs btn-info" aria-label="Left Align">UV</a>` : ''}
+                ${person.social_networks.linkedin && person.social_networks.linkedin !== 'none' ? `<a href="${person.social_networks.linkedin}"><img src="https://www.uv.es/gcamps/images/icons/linkedin.png" height="25" width="25"></a>` : ''}
+                ${person.social_networks.ieee && person.social_networks.ieee !== 'none' ? `<a href="${person.social_networks.ieee}"><button type="button" class="btn btn-xs btn-success" aria-label="Left Align">IEEE</button></a>` : ''}
+                ${person.social_networks.dblp && person.social_networks.dblp !== 'none' ? `<a href="${person.social_networks.dblp}"><button type="button" class="btn btn-xs btn-danger" aria-label="Left Align">dblp</button></a>` : ''}
+                ${person.social_networks.personal_website && person.social_networks.personal_website !== 'none' ? `<a href="${person.social_networks.personal_website}"><button type="button" class="btn btn-xs btn-info" aria-label="Left Align">Website</button></a>` : ''}
+                ${person.social_networks.causality && person.social_networks.causality !== 'none' ? `<a href="${person.social_networks.causality}"><button type="button" class="btn btn-xs btn-success" aria-label="Left Align">Causality</button></a>` : ''}
+                ${person.social_networks.manifold_learning && person.social_networks.manifold_learning !== 'none' ? `<a href="${person.social_networks.manifold_learning}"><button type="button" class="btn btn-xs btn-danger" aria-label="Left Align">Manifold Learning</button></a>` : ''}
               </div>
             </div>
           </div>
@@ -246,6 +233,7 @@ async function loadAllData() {
 }
 
 document.addEventListener('DOMContentLoaded', loadAllData);
+
 </script>
 
 

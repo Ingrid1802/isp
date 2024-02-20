@@ -1,21 +1,44 @@
 {
-  "grupo": "Associate Professors",
+  "groupTitle": "Associate Professors",
   "associate_professors": [
-    {  
-    "name": "Jordi Muñoz-Marí",
-    "image": "jordi.png",
-    "description": "At present I'm focused on kernel methods, support vector machines, semi-supervised and active learning. The main application field is on remote sensing data. I have recently worked with one-class classifiers applied to hyperspectral images.",
-    "google_scholar": "https://scholar.google.com/citations?user=XPs4yHUAAAAJ&hl=en",
-    "researchgate": "https://www.researchgate.com/profile/Jordi-Munoz-4",
-    "orcid": "https://orcid.org/0000-0002-3014-3921",
-    "github": "https://github.com/IPL-UV/",
-    "personal_uv": "https://www.uv.es/jordi/"
+    {
+      "name": "Jordi Muñoz-Marí",
+      "image": "jordi.png",
+      "description": "At present I'm focused on kernel methods, support vector machines, semi-supervised and active learning. The main application field is on remote sensing data. I have recently worked with one-class classifiers applied to hyperspectral images.",
+      "social_networks": {
+        "google_scholar": "https://scholar.google.com/citations?user=XPs4yHUAAAAJ&hl=en",
+        "orcid": "https://orcid.org/0000-0002-3014-3921",
+        "twitter": "none",
+        "github": "https://github.com/IPL-UV/",
+        "semantic_scholar": "none",
+        "researchgate": "https://www.researchgate.com/profile/Jordi-Munoz-4",
+        "personal_uv": "https://www.uv.es/jordi/",
+        "linkedin": "none",
+        "ieee": "none",
+        "dblp": "none",
+        "personal_website": "none",
+        "causality": "none",
+        "manifold_learning": "none"
+      }
     },
     {
-    "name": "Javier Calpe-Maravilla",
-    "image": "javi.png",
-    "description": "My current research involves signal processing to develop new interactive man-machine interfaces and haptics, and real-time multispectral sensors and actuators. I'm also with Analog Devices Inc.",
-    "orcid": "https://orcid.org/0000-0003-3418-7099"
+      "name": "Javier Calpe-Maravilla",
+      "image": "javi.png",
+      "description": "My current research involves signal processing to develop new interactive man-machine interfaces and haptics, and real-time multispectral sensors and actuators. I'm also with Analog Devices Inc.",
+      "social_networks": {
+        "google_scholar": "none",
+        "researchgate": "none",
+        "orcid": "https://orcid.org/0000-0003-3418-7099",
+        "github": "none",
+        "personal_uv": "none",
+        "twitter": "none",
+        "linkedin": "none",
+        "ieee": "none",
+        "dblp": "none",
+        "personal_website": "none",
+        "causality": "none",
+        "manifold_learning": "none"
+      }
     }
   ]
 }
