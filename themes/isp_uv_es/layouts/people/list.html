@@ -1,6 +1,6 @@
 {{ define "main" }}
   <div class="content-container"></div>
-
+  
 <script>
 async function loadData(filePath) {
   const response = await fetch(filePath);
@@ -132,6 +132,46 @@ document.addEventListener('DOMContentLoaded', loadAllData);
     background-color: #a7a7a7; /* Color del scrollbar */
     border-radius: 5px; /* Borde del scrollbar */
   }
+
+
+
+
+
+
+
+  /* Para dispositivos con un ancho máximo de 768px (tablets) */
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr; /* Una columna por fila */
+  }
+}
+
+/* Para dispositivos con un ancho máximo de 576px (celulares) */
+@media (max-width: 576px) {
+  .card-container {
+    grid-template-columns: 1fr; /* Una columna por fila */
+  }
+
+  /* Estilo adicional para hacer que las tarjetas ocupen toda la pantalla horizontalmente */
+  .card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Ajustar la imagen de la tarjeta para que se muestre encima del texto en lugar de al lado */
+  .card .row.g-0 .col-md-3 {
+    display: block;
+    text-align: center;
+  }
+
+  /* Ajustar el tamaño de la imagen de la tarjeta en dispositivos móviles */
+  .card .row.g-0 .col-md-3 img {
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
   </style>
   
 
