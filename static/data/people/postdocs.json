@@ -1,93 +1,205 @@
 {
-  "grupo": "Postdocs",
+  "groupTitle": "Postdocs",
   "postdocs": [
     {
       "name": "Miguel Ángel Fernández Torres",
       "image": "miguelangel.png",
       "description": "My research is related to the design of deep learning models and machine attention mechanisms to be deployed in anomaly and extreme event detection in the Earth sciences.",
-      "google_scholar": "https://scholar.google.com/citations?user=YxMTPqEAAAAJ&hl=es",
-      "researchgate": "https://www.researchgate.net/profile/Miguel-Angel-Fernandez-Torres",
-      "linkedin": "https://www.linkedin.com/in/miguelangelft/?originalSubdomain=es",
-      "orcid": "https://orcid.org/0000-0002-0801-199X",
-      "twitter": "https://twitter.com/miguelangelft",
-      "personal_website": "https://miguelangelft.github.io/"
+      "social_networks": {
+        "google_scholar": "https://scholar.google.com/citations?user=YxMTPqEAAAAJ&hl=es",
+        "orcid": "https://orcid.org/0000-0002-0801-199X",
+        "twitter": "https://twitter.com/miguelangelft",
+        "github": "none",
+        "semantic_scholar": "none",
+        "researchgate": "https://www.researchgate.net/profile/Miguel-Angel-Fernandez-Torres",
+        "personal_uv": "none",
+        "linkedin": "https://www.linkedin.com/in/miguelangelft/?originalSubdomain=es",
+        "ieee": "none",
+        "dblp": "none",
+        "personal_website": "https://miguelangelft.github.io/",
+        "causality": "none",
+        "manifold_learning": "none"
+      }
     },
     {
       "name": "Gherardo Varando",
       "image": "gherardo.png",
       "description": "My research focus on probabilistic graphical models: Bayesian networks/DAG, Gaussian graphical models, staged event trees. Recently I am interested in structural recovery from spatio-temporal data, causal discovery and applications for the Earth sciences.",
-      "google_scholar": "https://scholar.google.es/citations?user=ALjiTg0AAAAJ&hl=en",
-      "researchgate": "https://www.researchgate.net/profile/Gherardo-Varando",
-      "orcid": "https://orcid.org/0000-0002-6708-1103",
-      "github": "https://github.com/gherardovarando/",
-      "personal_website": "https://gherardovarando.github.io/"
+      "social_networks": {
+        "google_scholar": "https://scholar.google.es/citations?user=ALjiTg0AAAAJ&hl=en",
+        "orcid": "https://orcid.org/0000-0002-6708-1103",
+        "twitter": "none",
+        "github": "https://github.com/gherardovarando/",
+        "semantic_scholar": "none",
+        "researchgate": "https://www.researchgate.net/profile/Gherardo-Varando",
+        "personal_uv": "none",
+        "linkedin": "none",
+        "ieee": "none",
+        "dblp": "none",
+        "personal_website": "https://gherardovarando.github.io/",
+        "causality": "none",
+        "manifold_learning": "none"
+      }
     },
     {
       "name": "Eva Sevillano Marco",
       "image": "eva_profile.png",
       "description": "ISP Coordination & Project Manager. Ecologist by training. My research interests lie in Remote Sensing & GIS applications: multisensor support to forestry inventories, agriculture, land cover and change detection, geospatial data quality, Earth Observation products & services, etc. Collaborations with outstanding research groups and institutions, an asset. Onboard for new challenges!",
-      "researchgate": "https://www.researchgate.net/profile/Eva-Sevillano",
-      "linkedin": "https://www.linkedin.com/in/eva-sevillano-marco/?originalSubdomain=es",
-      "orcid": "http://orcid.org/0000-0002-5684-243X",
-      "twitter": "http://twitter.com/Eva_SeviMarco",
-      "personal_website": "https://www.google.com/maps/d/u/2/edit?mid=1DH15FL1CZ437amSOItODq4OsSBI&usp=sharing"
+      "social_networks": {
+        "google_scholar": "none",
+        "orcid": "http://orcid.org/0000-0002-5684-243X",
+        "twitter": "http://twitter.com/Eva_SeviMarco",
+        "github": "none",
+        "semantic_scholar": "none",
+        "researchgate": "https://www.researchgate.net/profile/Eva-Sevillano",
+        "personal_uv": "none",
+        "linkedin": "https://www.linkedin.com/in/eva-sevillano-marco/?originalSubdomain=es",
+        "ieee": "none",
+        "dblp": "none",
+        "personal_website": "https://www.google.com/maps/d/u/2/edit?mid=1DH15FL1CZ437amSOItODq4OsSBI&usp=sharing",
+        "causality": "none",
+        "manifold_learning": "none"
+      }
     },
     {
       "name": "Jorge Vicent Servera",
       "image": "06_vicen_ISP.png",
       "description": "My interests are related to atmospheric radiative transfer models, statistical regression emulation methods and image processing algortihms development and optimization. The application domains are remote sensing data analysis and hyperspectral images with special focus on atmospheric correction and scene/satellite simulation",
-      "researchgate": "https://www.researchgate.net/profile/Jorge-Vicent",
-      "linkedin": "https://www.linkedin.com/in/jorviser/",
-      "github": "https://gitlab.com/jorge.vicent/"
+      "social_networks": {
+        "google_scholar": "none",
+        "orcid": "none",
+        "twitter": "none",
+        "github": "https://gitlab.com/jorge.vicent/",
+        "semantic_scholar": "none",
+        "researchgate": "https://www.researchgate.net/profile/Jorge-Vicent",
+        "personal_uv": "none",
+        "linkedin": "https://www.linkedin.com/in/jorviser/",
+        "ieee": "none",
+        "dblp": "none",
+        "personal_website": "none",
+        "causality": "none",
+        "manifold_learning": "none"
+      }
     },
     {
       "name": "Óscar Pellicer",
       "image": "06_ISP_Oscar.png",
       "description": "During my PhD I employed machine learning for solving medical problems, focusing on medical image analysis for prostate cancer detection. I will now be applying the same techniques to satellite imaging, focusing on developing and explaining deep models for forecasting tasks.",
-      "google_scholar": "https://scholar.google.com/citations?user=CCFJshwAAAAJ",
-      "orcid": "https://orcid.org/0000-0002-0104-1029",
-      "linkedin": "https://www.linkedin.com/in/oscar-jos%C3%A9-pellicer-valero-9baab9128",
-      "github": "https://github.com/OscarPellicer"
+      "social_networks": {
+        "google_scholar": "https://scholar.google.com/citations?user=CCFJshwAAAAJ",
+        "orcid": "https://orcid.org/0000-0002-0104-1029",
+        "twitter": "none",
+        "github": "https://github.com/OscarPellicer",
+        "semantic_scholar": "none",
+        "researchgate": "none",
+        "personal_uv": "none",
+        "linkedin": "https://www.linkedin.com/in/oscar-jos%C3%A9-pellicer-valero-9baab9128",
+        "ieee": "none",
+        "dblp": "none",
+        "personal_website": "none",
+        "causality": "none",
+        "manifold_learning": "none"
+      }
     },
     {
       "name": "Gonzalo Mateo-García",
       "image": "gonzalo.png",
       "description": "My background is in the field of applied machine learning. I am specially interested in applications to natural sciences like remote sensing and weather and energy forecasting. Currently I am working in transfer learning with convolutional neural networks applied to cloud and flood segmentation.",
-      "google_scholar": "https://scholar.google.com/citations?user=ZwlGpiUAAAAJ&hl=en",
-      "linkedin": "https://www.linkedin.com/in/gonzalo-mateo-garcia/",
-      "orcid": "https://orcid.org/0000-0002-0569-393X",
-      "twitter": "https://twitter.com/gonzmg88",
-      "github": "https://github.com/gonzmg88",
-      "personal_website": "http://www.uv.es/gonmagar/"
+      "social_networks": {
+        "google_scholar": "https://scholar.google.com/citations?user=ZwlGpiUAAAAJ&hl=en",
+        "orcid": "https://orcid.org/0000-0002-0569-393X",
+        "twitter": "https://twitter.com/gonzmg88",
+        "github": "https://github.com/gonzmg88",
+        "semantic_scholar": "none",
+        "researchgate": "none",
+        "personal_uv": "none",
+        "linkedin": "https://www.linkedin.com/in/gonzalo-mateo-garcia/",
+        "ieee": "none",
+        "dblp": "none",
+        "personal_website": "http://www.uv.es/gonmagar/",
+        "causality": "none",
+        "manifold_learning": "none"
+      }
     },
     {
       "name": "Vassilis Sitokonstantinou",
       "image": "06_Vassilis_sito_ISP.png",
       "description": "I develop machine learning methods that incorporate causality and explainability, using Earth observations, climate data, and land use information. I analyze the impact of agricultural practices on ecosystem services and attribute crop failures to climate events. My goal is to provide data-driven insights for sustainable agriculture, towards expanding the global carbon sink while addressing global food demand.",
-      "google_scholar": "https://scholar.google.gr/citations?user=8WCaLYQAAAAJ&hl=en",
-      "linkedin": "https://www.linkedin.com/in/vsito/",
-      "orcid": "https://orcid.org/0000-0001-5506-2872",
-      "twitter": "https://twitter.com/vassilis_sito",
-      "researchgate": "https://www.researchgate.net/profile/Vasileios-Sitokonstantinou"
+      "social_networks": {
+        "google_scholar": "https://scholar.google.gr/citations?user=8WCaLYQAAAAJ&hl=en",
+        "orcid": "https://orcid.org/0000-0001-5506-2872",
+        "twitter": "https://twitter.com/vassilis_sito",
+        "github": "none",
+        "semantic_scholar": "none",
+        "researchgate": "https://www.researchgate.net/profile/Vasileios-Sitokonstantinou",
+        "personal_uv": "none",
+        "linkedin": "https://www.linkedin.com/in/vsito/",
+        "ieee": "none",
+        "dblp": "none",
+        "personal_website": "none",
+        "causality": "none",
+        "manifold_learning": "none"
+      }
     },
     {
       "name": "Nate Mankovich",
       "image": "06_Nate_ISP.png",
       "description": "I hold a PhD in Mathematics and am interested in applying my mathematical expertise towards utilizing manifold structures and causal relationships to develop dimensionality reduction algorithms for multimodal spatio-temporal datasets.",
-      "google_scholar": "https://scholar.google.com/citations?user=d9V9fdkAAAAJ&hl=en",
-      "linkedin": "https://www.linkedin.com/in/nathan-mankovich-b1293717/",
-      "github": "https://github.com/nmank",
-      "personal_website": "https://natemankovich.weebly.com/"
+      "social_networks": {
+        "google_scholar": "https://scholar.google.com/citations?user=d9V9fdkAAAAJ&hl=en",
+        "orcid": "none",
+        "twitter": "none",
+        "github": "https://github.com/nmank",
+        "semantic_scholar": "none",
+        "researchgate": "none",
+        "personal_uv": "none",
+        "linkedin": "https://www.linkedin.com/in/nathan-mankovich-b1293717/",
+        "ieee": "none",
+        "dblp": "none",
+        "personal_website": "https://natemankovich.weebly.com/",
+        "causality": "none",
+        "manifold_learning": "none"
+      }
     },
     {
       "name": "Is this you?",
       "image": "you2.png",
-      "description": "We are always looking for smart people! Send us your resume and ideas of collaboration!"
+      "description": "We are always looking for smart people! Send us your resume and ideas of collaboration!",
+      "social_networks": {
+        "google_scholar": "none",
+        "orcid": "none",
+        "twitter": "none",
+        "github": "none",
+        "semantic_scholar": "none",
+        "researchgate": "none",
+        "personal_uv": "none",
+        "linkedin": "none",
+        "ieee": "none",
+        "dblp": "none",
+        "personal_website": "none",
+        "causality": "none",
+        "manifold_learning": "none"
+      }
     },
     {
       "name": "Emiliano Díaz",
       "image": "emiliano.png",
-      "description": "My research interests include kernel methods, graphical models and causality, with the focus on Earth science applications."
+      "description": "My research interests include kernel methods, graphical models and causality, with the focus on Earth science applications.",
+      "social_networks": {
+        "google_scholar": "none",
+        "orcid": "none",
+        "twitter": "none",
+        "github": "none",
+        "semantic_scholar": "none",
+        "researchgate": "none",
+        "personal_uv": "none",
+        "linkedin": "none",
+        "ieee": "none",
+        "dblp": "none",
+        "personal_website": "none",
+        "causality": "none",
+        "manifold_learning": "none"
+      }
     }
   ]
 }
