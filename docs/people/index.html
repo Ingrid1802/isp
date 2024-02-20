@@ -155,7 +155,7 @@
   <main>
       
   <div class="content-container"></div>
-
+  
 <script>
 async function loadData(filePath) {
   const response = await fetch(filePath);
@@ -287,6 +287,46 @@ document.addEventListener('DOMContentLoaded', loadAllData);
     background-color: #a7a7a7;  
     border-radius: 5px;  
   }
+
+
+
+
+
+
+
+   
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr;  
+  }
+}
+
+ 
+@media (max-width: 576px) {
+  .card-container {
+    grid-template-columns: 1fr;  
+  }
+
+   
+  .card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+   
+  .card .row.g-0 .col-md-3 {
+    display: block;
+    text-align: center;
+  }
+
+   
+  .card .row.g-0 .col-md-3 img {
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
   </style>
   
 
