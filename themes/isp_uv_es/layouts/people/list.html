@@ -133,12 +133,6 @@ document.addEventListener('DOMContentLoaded', loadAllData);
     border-radius: 5px; /* Borde del scrollbar */
   }
 
-
-
-
-
-
-
   /* Para dispositivos con un ancho máximo de 768px (tablets) */
 @media (max-width: 768px) {
   .card-container {
@@ -169,6 +163,48 @@ document.addEventListener('DOMContentLoaded', loadAllData);
     height: auto;
     max-width: 100%;
     margin-bottom: 10px;
+  }
+
+  .rounded-start {
+    border-bottom-left-radius: 0 !important;
+    border-top-left-radius: 0!important;
+}
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  .card .row.g-0 {
+    display: block;
+  }
+
+  .card .col-md-3,
+  .card .col-md-9 {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+  }
+
+  .card .col-md-3 {
+    float: left;
+    width: 30%;
+  }
+
+  .card .col-md-9 {
+    float: right; 
+    width: 70%; 
+  }
+
+  .card .col-md-3 img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  
   }
 }
 
