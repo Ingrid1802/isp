@@ -112,11 +112,22 @@
     color: #fff !important;
   }
 
+  .navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .navbar-nav .dropdown-menu:hover {
+    display: block;
+  }
+
+  .dropdown-menu {
+    margin-top: 7px; 
+  }
+
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   }
 
-   
   .navbar-toggler {
     border: none;
   }
@@ -152,6 +163,12 @@
   }
 
 </style>
+
+<script>
+  document.querySelectorAll('.dropdown-toggle').forEach(item => {
+    item.removeAttribute('data-bs-toggle');
+});
+</script>
   <main>
       
   <div class="content-container"></div>
@@ -278,6 +295,10 @@ document.addEventListener('DOMContentLoaded', loadAllData);
   .card {
       max-width: 100%;
   }
+
+  .card-body{
+    
+  }
   
   .card-body::-webkit-scrollbar {
     width: 5px;  
@@ -305,6 +326,11 @@ document.addEventListener('DOMContentLoaded', loadAllData);
   .card {
     width: 100%;
     max-width: 100%;
+  }
+
+  .card-body {
+    max-height: initial !important; 
+    overflow-y: initial !important; 
   }
 
    
