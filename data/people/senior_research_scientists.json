@@ -1,0 +1,45 @@
+{
+  "groupTitle": "Senior research scientists",
+  "senior_research_scientists": [
+    {
+      "name": "Álvaro Moreno Martínez",
+      "image": "alvaro.png",
+      "description": "My research has been mainly focused on remote sensing applications in vegetation. I have been actively involved in the development of physical and statistical models and the implementation of operational methodologies for the study of vegetation cover through satellite imagery at different spatial/temporal scales.",
+      "social_networks": {
+        "google_scholar": "https://scholar.google.es/citations?user=vmedAiwAAAAJ&hl=es",
+        "orcid": "https://orcid.org/0000-0003-2990-7768",
+        "twitter": "none",
+        "github": "none",
+        "semantic_scholar": "none",
+        "researchgate": "https://www.researchgate.net/profile/Alvaro-Moreno-2",
+        "personal_uv": "none",
+        "linkedin": "https://www.linkedin.com/in/alvaro-moreno-mart%C3%ADnez-bb193229/?originalSubdomain=es",
+        "ieee": "none",
+        "dblp": "none",
+        "personal_website": "none",
+        "causality": "none",
+        "manifold_learning": "none"
+      }
+    },
+    {
+      "name": "Veronica Nieves - Distinguished Researcher",
+      "image": "veronica.png",
+      "description": "My research at the interface between ocean sciences and climate informatics focuses on the development of the next generation of advanced algorithms to better understand our changing oceans and evaluate potential future climate risks. Research activities can be followed on <a href='https://www.aiforoceans.org' target='_blank'>I4OCEANS</a>",
+      "social_networks": {
+        "google_scholar": "https://scholar.google.com/citations?user=ijT_5O4AAAAJ&hl=en",
+        "orcid": "https://orcid.org/0000-0003-0024-8383",
+        "twitter": "https://twitter.com/vero_u_nieves?lang=cs",
+        "github": "https://github.com/IPL-UV/",
+        "semantic_scholar": "none",
+        "researchgate": "https://www.researchgate.net/profile/Veronica-Nieves-2",
+        "personal_uv": "none",
+        "linkedin": "none",
+        "ieee": "none",
+        "dblp": "none",
+        "personal_website": "https://www.aiforoceans.org",
+        "causality": "none",
+        "manifold_learning": "none"
+      }
+    }
+  ]
+}

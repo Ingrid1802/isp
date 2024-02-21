@@ -1,0 +1,65 @@
+{
+  "groupTitle": "Full Professors",
+  "full_professors": [
+    {
+      "name": "Gustau Camps-Valls",
+      "image": "gus18.png",
+      "description": "My research is related to statistical learning for modeling and understanding the Earth system",
+      "social_networks": {
+        "google_scholar": "https://scholar.google.com/citations?user=6mgnauMAAAAJ",
+        "orcid": "http://orcid.org/0000-0003-1683-2138",
+        "twitter": "http://twitter.com/isp_uv_es",
+        "github": "https://github.com/IPL-UV/",
+        "semantic_scholar": "https://www.semanticscholar.org/author/1397959153",
+        "researchgate": "none",
+        "personal_uv": "https://www.uv.es/gcamps/",
+        "linkedin": "none",
+        "ieee": "none",
+        "dblp": "none",
+        "personal_website": "none",
+        "causality": "none",
+        "manifold_learning": "none"
+      }
+    },
+    {
+      "name": "Jesús Malo",
+      "image": "jesus.png",
+      "description": "I'm interested in understanding human vision from information theoretic principles. This statistical view has implications in experimental and computational neuroscience. <a href='excathedra.html' target='_blank'>(See the ex-cathedra statement)</a>",
+      "social_networks": {
+        "google_scholar": "https://scholar.google.es/citations?user=0pgrklEAAAAJ&hl=es",
+        "orcid": "https://orcid.org/0000-0002-5684-8591",
+        "twitter": "https://twitter.com/jesusmalo32",
+        "github": "https://github.com/IPL-UV/",
+        "semantic_scholar": "none",
+        "researchgate": "none",
+        "personal_uv": "https://www.uv.es/jmalo/",
+        "linkedin": "none",
+        "ieee": "none",
+        "dblp": "none",
+        "personal_website": "none",
+        "causality": "none",
+        "manifold_learning": "none"
+      }
+    },
+    {
+      "name": "Luis Gómez-Chova",
+      "image": "luis.png",
+      "description": "My interests are related to machine learning and signal and image processing. The application domains are remote sensing data analysis and hyperspectral images with special focus on cloud screening.",
+      "social_networks": {
+        "google_scholar": "https://scholar.google.com/citations?user=7LQsYOcAAAAJ&hl=en",
+        "orcid": "https://orcid.org/0000-0003-3924-1269",
+        "twitter": "http://twitter.com/isp_uv_es",
+        "github": "https://github.com/IPL-UV/",
+        "semantic_scholar": "none",
+        "researchgate": "https://www.researchgate.net/profile/Luis-Gomez-Chova",
+        "personal_uv": "https://www.uv.es/chovago/",
+        "linkedin": "https://www.linkedin.com/in/luis-gomez-chova",
+        "ieee": "none",
+        "dblp": "none",
+        "personal_website": "none",
+        "causality": "none",
+        "manifold_learning": "none"
+      }
+    }
+  ]
+}
