@@ -47,7 +47,7 @@ async function loadAllData() {
       card.innerHTML = `
         <div class="row g-0">
           <div class="col-md-3">
-            <img src="${basePath + person.image}" class="img-fluid rounded-start" alt="Imagen de ${person.name}" style="height: 200px; width:140px">
+            <img src="${basePath + person.image}" class="img-fluid" alt="Imagen de ${person.name}" style="height: 200px; width:140px">
           </div>
           <div class="col-md-9">
             <div class="card-body" style="max-height: 200px; overflow-y: auto;">
@@ -122,10 +122,7 @@ document.addEventListener('DOMContentLoaded', loadAllData);
   
   .card {
       max-width: 100%;
-  }
-
-  .card-body{
-    
+      --bs-card-border-width: initial;
   }
   
   .card-body::-webkit-scrollbar {
@@ -174,10 +171,6 @@ document.addEventListener('DOMContentLoaded', loadAllData);
     margin-bottom: 10px;
   }
 
-  .rounded-start {
-    border-bottom-left-radius: 0 !important;
-    border-top-left-radius: 0!important;
-}
 }
 
 @media (min-width: 577px) and (max-width: 767px) {
