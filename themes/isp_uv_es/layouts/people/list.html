@@ -75,19 +75,17 @@ async function loadAllData() {
       cardContainer.appendChild(card);
     });
   }
-}
-
+};
 document.addEventListener('DOMContentLoaded', loadAllData);
-
 </script>
 
 
 <style>
   .content-container {
-      max-width: 90%;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 30px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
   }
 
   .btn-xs {
@@ -95,34 +93,34 @@ document.addEventListener('DOMContentLoaded', loadAllData);
     font-size: 12px;
     line-height: 1.5;
     border-radius: 3px;
-}
+  }
   
   .label {
-      display: inline;
-      padding: 0.2em 0.6em 0.3em;
-      font-size: 75%;
-      font-weight: 700;
-      line-height: 1;
-      color: #fff;
-      text-align: center;
-      white-space: nowrap;
-      vertical-align: baseline;
-      border-radius: 0.25em;
+    display: inline;
+    padding: 0.2em 0.6em 0.3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25em;
   }
   
   .label-info {
-      background-color: #5bc0de;
+    background-color: #5bc0de;
   }
   
   .card-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); /* Dos columnas por fila */
-      gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas por fila */
+    gap: 20px;
   }
   
   .card {
-      max-width: 100%;
-      --bs-card-border-width: initial;
+    max-width: 100%;
+    --bs-card-border-width: initial;
   }
   
   .card-body::-webkit-scrollbar {
@@ -130,85 +128,82 @@ document.addEventListener('DOMContentLoaded', loadAllData);
   }
   
   .card-body::-webkit-scrollbar-thumb {
-    background-color: #a7a7a7; /* Color del scrollbar */
-    border-radius: 5px; /* Borde del scrollbar */
+    background-color: #a7a7a7;
+    border-radius: 5px;
   }
 
   /* Para dispositivos con un ancho máximo de 768px (tablets) */
-@media (max-width: 768px) {
-  .card-container {
-    grid-template-columns: 1fr; /* Una columna por fila */
-  }
-}
-
-/* Para dispositivos con un ancho máximo de 576px (celulares) */
-@media (max-width: 576px) {
-  .card-container {
-    grid-template-columns: 1fr; /* Una columna por fila */
+  @media (max-width: 768px) {
+    .card-container {
+      grid-template-columns: 1fr; /* Una columna por fila */
+    }
   }
 
-  /* Estilo adicional para hacer que las tarjetas ocupen toda la pantalla horizontalmente */
-  .card {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .card-body {
-    max-height: initial !important; 
-    overflow-y: initial !important; 
-  }
-
-  /* Ajustar la imagen de la tarjeta para que se muestre encima del texto en lugar de al lado */
-  .card .row.g-0 .col-md-3 {
-    display: block;
-    text-align: center;
-  }
-
-  /* Ajustar el tamaño de la imagen de la tarjeta en dispositivos móviles */
-  .card .row.g-0 .col-md-3 img {
-    height: auto;
-    max-width: 100%;
-    margin-bottom: 10px;
-  }
-
-}
-
-@media (min-width: 577px) and (max-width: 767px) {
-  .card .row.g-0 {
-    display: block;
-  }
-
-  .card .col-md-3,
-  .card .col-md-9 {
-    display: inline-block;
-    vertical-align: top;
-    width: 50%;
-  }
-
-  .card .col-md-3 {
-    float: left;
-    width: 30%;
-  }
-
-  .card .col-md-9 {
-    float: right; 
-    width: 70%; 
-  }
-
-  .card .col-md-3 img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-
-
-@media (min-width: 769px) and (max-width: 991px) {
-  .card-container {
-    grid-template-columns: repeat(1, 1fr);
+  /* Para dispositivos con un ancho máximo de 576px (celulares) */
+  @media (max-width: 576px) {
+    .card-container {
+      grid-template-columns: 1fr; /* Una columna por fila */
+    }
   
-  }
-}
+    /* Estilo adicional para hacer que las tarjetas ocupen toda la pantalla horizontalmente */
+    .card {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .card-body {
+      max-height: initial !important; 
+      overflow-y: initial !important; 
+    }
+  
+    /* Ajustar la imagen de la tarjeta para que se muestre encima del texto en lugar de al lado */
+    .card .row.g-0 .col-md-3 {
+      display: block;
+      text-align: center;
+    }
+  
+      /* Ajustar el tamaño de la imagen de la tarjeta en dispositivos móviles */
+    .card .row.g-0 .col-md-3 img {
+      height: auto;
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
 
+  }
+  
+  @media (min-width: 577px) and (max-width: 767px) {
+    .card .row.g-0 {
+      display: block;
+    }
+  
+    .card .col-md-3,
+    .card .col-md-9 {
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+    }
+
+    .card .col-md-3 {
+      float: left;
+      width: 30%;
+    }
+  
+    .card .col-md-9 {
+      float: right; 
+      width: 70%; 
+    }
+  
+    .card .col-md-3 img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 991px) {
+    .card-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
 </style>
 {{ end }}
