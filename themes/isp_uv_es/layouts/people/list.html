@@ -1,11 +1,11 @@
 {{ define "main" }}
   <div class="content-container"></div>
-  
 <script>
 async function loadData(filePath) {
   const response = await fetch(filePath);
   return response.json();
 }
+
 async function loadAllData() {
   const groups = [
     "full_professors", 
@@ -210,7 +210,5 @@ document.addEventListener('DOMContentLoaded', loadAllData);
   }
 }
 
-  </style>
-  
-
+</style>
 {{ end }}
