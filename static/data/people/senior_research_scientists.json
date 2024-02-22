@@ -1,6 +1,6 @@
 {
   "groupTitle": "Senior research scientists",
-  "senior_research_scientists": [
+  "members": [
     {
       "name": "Álvaro Moreno Martínez",
       "image": "alvaro.png",
@@ -8,17 +8,17 @@
       "social_networks": {
         "google_scholar": "https://scholar.google.es/citations?user=vmedAiwAAAAJ&hl=es",
         "orcid": "https://orcid.org/0000-0003-2990-7768",
-        "twitter": "none",
-        "github": "none",
-        "semantic_scholar": "none",
+        "twitter": null,
+        "github": null,
+        "semantic_scholar": null,
         "researchgate": "https://www.researchgate.net/profile/Alvaro-Moreno-2",
-        "personal_uv": "none",
+        "personal_uv": null,
         "linkedin": "https://www.linkedin.com/in/alvaro-moreno-mart%C3%ADnez-bb193229/?originalSubdomain=es",
-        "ieee": "none",
-        "dblp": "none",
-        "personal_website": "none",
-        "causality": "none",
-        "manifold_learning": "none"
+        "ieee": null,
+        "dblp": null,
+        "personal_website": null,
+        "causality": null,
+        "manifold_learning": null
       }
     },
     {
@@ -30,15 +30,15 @@
         "orcid": "https://orcid.org/0000-0003-0024-8383",
         "twitter": "https://twitter.com/vero_u_nieves?lang=cs",
         "github": "https://github.com/IPL-UV/",
-        "semantic_scholar": "none",
+        "semantic_scholar": null,
         "researchgate": "https://www.researchgate.net/profile/Veronica-Nieves-2",
-        "personal_uv": "none",
-        "linkedin": "none",
-        "ieee": "none",
-        "dblp": "none",
+        "personal_uv": null,
+        "linkedin": null,
+        "ieee": null,
+        "dblp": null,
         "personal_website": "https://www.aiforoceans.org",
-        "causality": "none",
-        "manifold_learning": "none"
+        "causality": null,
+        "manifold_learning": null
       }
     }
   ]

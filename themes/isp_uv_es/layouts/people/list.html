@@ -1,6 +1,58 @@
 {{ define "main" }}
   <div class="content-container"></div>
+
+  <script type="module">
+  import Ajv from 'https://cdn.skypack.dev/ajv';
+
+    // Cargar el esquema y validar los datos JSON
+    async function validateData(filePath, schemaPath) {
+      const response = await fetch(filePath);
+      const data = await response.json();
+    
+      const schemaResponse = await fetch(schemaPath);
+      const schema = await schemaResponse.json();
+
+      const ajv = new Ajv();
+      const validate = ajv.compile(schema);
+
+      const valid = validate(data);
+
+      if (!valid) {
+        console.error(`Error de validación en el archivo ${filePath}:`);
+        validate.errors.forEach(error => {
+          console.error(`  - En la propiedad ${error.instancePath}: ${error.message}`);
+        });
+      } else {
+        console.log('Los datos son válidos.');
+      }
+    }
+
+    // Validar cada archivo JSON
+    const files = [
+      'alumni.json',
+      'assistant_professors.json',
+      'associate_professors.json',
+      'full_professors.json',
+      'phd_students.json',
+      'postdocs.json',
+      'senior_research_scientists.json',
+      'visitors.json'
+    ];
+
+    const schemaPath = '/isp/schema.json';
+
+    files.forEach(file => {
+      validateData(`/isp/data/people/${file}`, schemaPath);
+    });
+  </script>
+  
+
+
+
+
+
   <script>
+
     async function loadData(filePath) {
       const response = await fetch(filePath);
       return response.json();
@@ -29,7 +81,7 @@
         groupTitle.style.marginBottom = '30px';
         const label = document.createElement('span');
         label.classList.add('label', 'label-info');
-        label.textContent = group.replace(/_/g, ' ');
+        label.textContent = data.groupTitle;
         groupTitle.appendChild(label);
         container.appendChild(groupTitle);
 
@@ -40,7 +92,7 @@
 
         const basePath = '../images/people/';
 
-        data[group].forEach(person => {
+        data.members.forEach(person => {
           const card = document.createElement('div');
           card.classList.add('card', 'mb-3');
           card.innerHTML = `
@@ -53,19 +105,19 @@
                   <h5 class="card-title" style="font-size: 1.1em;">${person.name}</h5>
                   <p class="card-text" style="font-size: 0.95em;">${person.description}</p>
                   <div class="card-links">
-                    ${person.social_networks.google_scholar && person.social_networks.google_scholar !== 'none' ? `<a href="${person.social_networks.google_scholar}"><img src="https://www.uv.es/gcamps/images/icons/gscholar.png" height="25" width="25"></a>` : ''}
-                    ${person.social_networks.orcid && person.social_networks.orcid !== 'none' ? `<a href="${person.social_networks.orcid}"><img src="https://www.uv.es/gcamps/images/icons/orcid.png" height="25" width="25"></a>` : ''}
-                    ${person.social_networks.twitter && person.social_networks.twitter !== 'none' ? `<a href="${person.social_networks.twitter}"><img src="https://www.uv.es/gcamps/images/icons/twitter.png" height="24" width="30"></a>` : ''}
-                    ${person.social_networks.github && person.social_networks.github !== 'none' ? `<a href="${person.social_networks.github}"><img src="https://www.uv.es/gcamps/images/icons/github.png" height="25" width="25"></a>` : ''}
-                    ${person.social_networks.semantic_scholar && person.social_networks.semantic_scholar !== 'none' ? `<a href="${person.social_networks.semantic_scholar}"><img src="https://www.uv.es/gcamps/images/icons/semantic.png" height="25" width="25"></a>` : ''}
-                    ${person.social_networks.researchgate && person.social_networks.researchgate !== 'none' ? `<a href="${person.social_networks.researchgate}"><img src="https://www.uv.es/gcamps/images/icons/rg.png" height="25" width="25"></a>` : ''}
-                    ${person.social_networks.personal_uv && person.social_networks.personal_uv !== 'none' ? `<a href="${person.social_networks.personal_uv}" class="btn btn-xs btn-info" aria-label="Left Align">UV</a>` : ''}
-                    ${person.social_networks.linkedin && person.social_networks.linkedin !== 'none' ? `<a href="${person.social_networks.linkedin}"><img src="https://www.uv.es/gcamps/images/icons/linkedin.png" height="25" width="25"></a>` : ''}
-                    ${person.social_networks.ieee && person.social_networks.ieee !== 'none' ? `<a href="${person.social_networks.ieee}"><button type="button" class="btn btn-xs btn-success" aria-label="Left Align">IEEE</button></a>` : ''}
-                    ${person.social_networks.dblp && person.social_networks.dblp !== 'none' ? `<a href="${person.social_networks.dblp}"><button type="button" class="btn btn-xs btn-danger" aria-label="Left Align">dblp</button></a>` : ''}
-                    ${person.social_networks.personal_website && person.social_networks.personal_website !== 'none' ? `<a href="${person.social_networks.personal_website}"><button type="button" class="btn btn-xs btn-info" aria-label="Left Align">Website</button></a>` : ''}
-                    ${person.social_networks.causality && person.social_networks.causality !== 'none' ? `<a href="${person.social_networks.causality}"><button type="button" class="btn btn-xs btn-success" aria-label="Left Align">Causality</button></a>` : ''}
-                    ${person.social_networks.manifold_learning && person.social_networks.manifold_learning !== 'none' ? `<a href="${person.social_networks.manifold_learning}"><button type="button" class="btn btn-xs btn-danger" aria-label="Left Align">Manifold Learning</button></a>` : ''}
+                    ${person.social_networks.google_scholar && person.social_networks.google_scholar !== null ? `<a href="${person.social_networks.google_scholar}"><img src="https://www.uv.es/gcamps/images/icons/gscholar.png" height="25" width="25"></a>` : ''}
+                    ${person.social_networks.orcid && person.social_networks.orcid !== null ? `<a href="${person.social_networks.orcid}"><img src="https://www.uv.es/gcamps/images/icons/orcid.png" height="25" width="25"></a>` : ''}
+                    ${person.social_networks.twitter && person.social_networks.twitter !== null ? `<a href="${person.social_networks.twitter}"><img src="https://www.uv.es/gcamps/images/icons/twitter.png" height="24" width="30"></a>` : ''}
+                    ${person.social_networks.github && person.social_networks.github !== null ? `<a href="${person.social_networks.github}"><img src="https://www.uv.es/gcamps/images/icons/github.png" height="25" width="25"></a>` : ''}
+                    ${person.social_networks.semantic_scholar && person.social_networks.semantic_scholar !== null ? `<a href="${person.social_networks.semantic_scholar}"><img src="https://www.uv.es/gcamps/images/icons/semantic.png" height="25" width="25"></a>` : ''}
+                    ${person.social_networks.researchgate && person.social_networks.researchgate !== null ? `<a href="${person.social_networks.researchgate}"><img src="https://www.uv.es/gcamps/images/icons/rg.png" height="25" width="25"></a>` : ''}
+                    ${person.social_networks.personal_uv && person.social_networks.personal_uv !== null ? `<a href="${person.social_networks.personal_uv}" class="btn btn-xs btn-info" aria-label="Left Align">UV</a>` : ''}
+                    ${person.social_networks.linkedin && person.social_networks.linkedin !== null ? `<a href="${person.social_networks.linkedin}"><img src="https://www.uv.es/gcamps/images/icons/linkedin.png" height="25" width="25"></a>` : ''}
+                    ${person.social_networks.ieee && person.social_networks.ieee !== null ? `<a href="${person.social_networks.ieee}"><button type="button" class="btn btn-xs btn-success" aria-label="Left Align">IEEE</button></a>` : ''}
+                    ${person.social_networks.dblp && person.social_networks.dblp !== null ? `<a href="${person.social_networks.dblp}"><button type="button" class="btn btn-xs btn-danger" aria-label="Left Align">dblp</button></a>` : ''}
+                    ${person.social_networks.personal_website && person.social_networks.personal_website !== null ? `<a href="${person.social_networks.personal_website}"><button type="button" class="btn btn-xs btn-info" aria-label="Left Align">Website</button></a>` : ''}
+                    ${person.social_networks.causality && person.social_networks.causality !== null ? `<a href="${person.social_networks.causality}"><button type="button" class="btn btn-xs btn-success" aria-label="Left Align">Causality</button></a>` : ''}
+                    ${person.social_networks.manifold_learning && person.social_networks.manifold_learning !== null ? `<a href="${person.social_networks.manifold_learning}"><button type="button" class="btn btn-xs btn-danger" aria-label="Left Align">Manifold Learning</button></a>` : ''}
                    </div>
                 </div>
               </div>
@@ -77,131 +129,4 @@
     };
     document.addEventListener('DOMContentLoaded', loadAllData);
   </script>
-
-<style>
-  .content-container {
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-  }
-
-  .btn-xs {
-    padding: 1px 5px;
-    font-size: 12px;
-    line-height: 1.5;
-    border-radius: 3px;
-  }
-  
-  .label {
-    display: inline;
-    padding: 0.2em 0.6em 0.3em;
-    font-size: 75%;
-    font-weight: 700;
-    line-height: 1;
-    color: #fff;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: 0.25em;
-  }
-  
-  .label-info {
-    background-color: #5bc0de;
-  }
-  
-  .card-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas por fila */
-    gap: 20px;
-  }
-  
-  .card {
-    max-width: 100%;
-    --bs-card-border-width: initial;
-  }
-  
-  .card-body::-webkit-scrollbar {
-    width: 5px; /* Ancho del scrollbar */
-  }
-  
-  .card-body::-webkit-scrollbar-thumb {
-    background-color: #a7a7a7;
-    border-radius: 5px;
-  }
-
-  /* Para dispositivos con un ancho máximo de 768px (tablets) */
-  @media (max-width: 768px) {
-    .card-container {
-      grid-template-columns: 1fr; /* Una columna por fila */
-    }
-  }
-
-  /* Para dispositivos con un ancho máximo de 576px (celulares) */
-  @media (max-width: 576px) {
-    .card-container {
-      grid-template-columns: 1fr; /* Una columna por fila */
-    }
-  
-    /* Estilo adicional para hacer que las tarjetas ocupen toda la pantalla horizontalmente */
-    .card {
-      width: 100%;
-      max-width: 100%;
-    }
-  
-    .card-body {
-      max-height: initial !important; 
-      overflow-y: initial !important; 
-    }
-  
-    /* Ajustar la imagen de la tarjeta para que se muestre encima del texto en lugar de al lado */
-    .card .row.g-0 .col-md-3 {
-      display: block;
-      text-align: center;
-    }
-  
-      /* Ajustar el tamaño de la imagen de la tarjeta en dispositivos móviles */
-    .card .row.g-0 .col-md-3 img {
-      height: auto;
-      max-width: 100%;
-      margin-bottom: 10px;
-    }
-
-  }
-  
-  @media (min-width: 577px) and (max-width: 767px) {
-    .card .row.g-0 {
-      display: block;
-    }
-  
-    .card .col-md-3,
-    .card .col-md-9 {
-      display: inline-block;
-      vertical-align: top;
-      width: 50%;
-    }
-
-    .card .col-md-3 {
-      float: left;
-      width: 30%;
-    }
-  
-    .card .col-md-9 {
-      float: right; 
-      width: 70%; 
-    }
-  
-    .card .col-md-3 img {
-      max-width: 100%;
-      height: auto;
-    }
-  }
-
-  @media (min-width: 769px) and (max-width: 991px) {
-    .card-container {
-      grid-template-columns: repeat(1, 1fr);
-    }
-  }
-  
-</style>
 {{ end }}

@@ -1,6 +1,6 @@
 {
   "groupTitle": "Associate Professors",
-  "associate_professors": [
+  "members": [
     {
       "name": "Jordi Muñoz-Marí",
       "image": "jordi.png",
@@ -8,17 +8,17 @@
       "social_networks": {
         "google_scholar": "https://scholar.google.com/citations?user=XPs4yHUAAAAJ&hl=en",
         "orcid": "https://orcid.org/0000-0002-3014-3921",
-        "twitter": "none",
+        "twitter": null,
         "github": "https://github.com/IPL-UV/",
-        "semantic_scholar": "none",
+        "semantic_scholar": null,
         "researchgate": "https://www.researchgate.com/profile/Jordi-Munoz-4",
         "personal_uv": "https://www.uv.es/jordi/",
-        "linkedin": "none",
-        "ieee": "none",
-        "dblp": "none",
-        "personal_website": "none",
-        "causality": "none",
-        "manifold_learning": "none"
+        "linkedin": null,
+        "ieee": null,
+        "dblp": null,
+        "personal_website": null,
+        "causality": null,
+        "manifold_learning": null
       }
     },
     {
@@ -26,18 +26,19 @@
       "image": "javi.png",
       "description": "My current research involves signal processing to develop new interactive man-machine interfaces and haptics, and real-time multispectral sensors and actuators. I'm also with Analog Devices Inc.",
       "social_networks": {
-        "google_scholar": "none",
-        "researchgate": "none",
+        "google_scholar": null,
+        "researchgate": null,
         "orcid": "https://orcid.org/0000-0003-3418-7099",
-        "github": "none",
-        "personal_uv": "none",
-        "twitter": "none",
-        "linkedin": "none",
-        "ieee": "none",
-        "dblp": "none",
-        "personal_website": "none",
-        "causality": "none",
-        "manifold_learning": "none"
+        "github": null,
+        "semantic_scholar": null,
+        "personal_uv": null,
+        "twitter": null,
+        "linkedin": null,
+        "ieee": null,
+        "dblp": null,
+        "personal_website": null,
+        "causality": null,
+        "manifold_learning": null
       }
     }
   ]
