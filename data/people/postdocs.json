@@ -1,6 +1,6 @@
 {
   "groupTitle": "Postdocs",
-  "postdocs": [
+  "members": [
     {
       "name": "Miguel Ángel Fernández Torres",
       "image": "miguelangel.png",
@@ -9,16 +9,16 @@
         "google_scholar": "https://scholar.google.com/citations?user=YxMTPqEAAAAJ&hl=es",
         "orcid": "https://orcid.org/0000-0002-0801-199X",
         "twitter": "https://twitter.com/miguelangelft",
-        "github": "none",
-        "semantic_scholar": "none",
+        "github": null,
+        "semantic_scholar": null,
         "researchgate": "https://www.researchgate.net/profile/Miguel-Angel-Fernandez-Torres",
-        "personal_uv": "none",
+        "personal_uv": null,
         "linkedin": "https://www.linkedin.com/in/miguelangelft/?originalSubdomain=es",
-        "ieee": "none",
-        "dblp": "none",
+        "ieee": null,
+        "dblp": null,
         "personal_website": "https://miguelangelft.github.io/",
-        "causality": "none",
-        "manifold_learning": "none"
+        "causality": null,
+        "manifold_learning": null
       }
     },
     {
@@ -28,17 +28,17 @@
       "social_networks": {
         "google_scholar": "https://scholar.google.es/citations?user=ALjiTg0AAAAJ&hl=en",
         "orcid": "https://orcid.org/0000-0002-6708-1103",
-        "twitter": "none",
+        "twitter": null,
         "github": "https://github.com/gherardovarando/",
-        "semantic_scholar": "none",
+        "semantic_scholar": null,
         "researchgate": "https://www.researchgate.net/profile/Gherardo-Varando",
-        "personal_uv": "none",
-        "linkedin": "none",
-        "ieee": "none",
-        "dblp": "none",
+        "personal_uv": null,
+        "linkedin": null,
+        "ieee": null,
+        "dblp": null,
         "personal_website": "https://gherardovarando.github.io/",
-        "causality": "none",
-        "manifold_learning": "none"
+        "causality": null,
+        "manifold_learning": null
       }
     },
     {
@@ -46,19 +46,19 @@
       "image": "eva_profile.png",
       "description": "ISP Coordination & Project Manager. Ecologist by training. My research interests lie in Remote Sensing & GIS applications: multisensor support to forestry inventories, agriculture, land cover and change detection, geospatial data quality, Earth Observation products & services, etc. Collaborations with outstanding research groups and institutions, an asset. Onboard for new challenges!",
       "social_networks": {
-        "google_scholar": "none",
+        "google_scholar": null,
         "orcid": "http://orcid.org/0000-0002-5684-243X",
         "twitter": "http://twitter.com/Eva_SeviMarco",
-        "github": "none",
-        "semantic_scholar": "none",
+        "github": null,
+        "semantic_scholar": null,
         "researchgate": "https://www.researchgate.net/profile/Eva-Sevillano",
-        "personal_uv": "none",
+        "personal_uv": null,
         "linkedin": "https://www.linkedin.com/in/eva-sevillano-marco/?originalSubdomain=es",
-        "ieee": "none",
-        "dblp": "none",
+        "ieee": null,
+        "dblp": null,
         "personal_website": "https://www.google.com/maps/d/u/2/edit?mid=1DH15FL1CZ437amSOItODq4OsSBI&usp=sharing",
-        "causality": "none",
-        "manifold_learning": "none"
+        "causality": null,
+        "manifold_learning": null
       }
     },
     {
@@ -66,19 +66,19 @@
       "image": "06_vicen_ISP.png",
       "description": "My interests are related to atmospheric radiative transfer models, statistical regression emulation methods and image processing algortihms development and optimization. The application domains are remote sensing data analysis and hyperspectral images with special focus on atmospheric correction and scene/satellite simulation",
       "social_networks": {
-        "google_scholar": "none",
-        "orcid": "none",
-        "twitter": "none",
+        "google_scholar": null,
+        "orcid": null,
+        "twitter": null,
         "github": "https://gitlab.com/jorge.vicent/",
-        "semantic_scholar": "none",
+        "semantic_scholar": null,
         "researchgate": "https://www.researchgate.net/profile/Jorge-Vicent",
-        "personal_uv": "none",
+        "personal_uv": null,
         "linkedin": "https://www.linkedin.com/in/jorviser/",
-        "ieee": "none",
-        "dblp": "none",
-        "personal_website": "none",
-        "causality": "none",
-        "manifold_learning": "none"
+        "ieee": null,
+        "dblp": null,
+        "personal_website": null,
+        "causality": null,
+        "manifold_learning": null
       }
     },
     {
@@ -88,17 +88,17 @@
       "social_networks": {
         "google_scholar": "https://scholar.google.com/citations?user=CCFJshwAAAAJ",
         "orcid": "https://orcid.org/0000-0002-0104-1029",
-        "twitter": "none",
+        "twitter": null,
         "github": "https://github.com/OscarPellicer",
-        "semantic_scholar": "none",
-        "researchgate": "none",
-        "personal_uv": "none",
+        "semantic_scholar": null,
+        "researchgate": null,
+        "personal_uv": null,
         "linkedin": "https://www.linkedin.com/in/oscar-jos%C3%A9-pellicer-valero-9baab9128",
-        "ieee": "none",
-        "dblp": "none",
-        "personal_website": "none",
-        "causality": "none",
-        "manifold_learning": "none"
+        "ieee": null,
+        "dblp": null,
+        "personal_website": null,
+        "causality": null,
+        "manifold_learning": null
       }
     },
     {
@@ -110,15 +110,15 @@
         "orcid": "https://orcid.org/0000-0002-0569-393X",
         "twitter": "https://twitter.com/gonzmg88",
         "github": "https://github.com/gonzmg88",
-        "semantic_scholar": "none",
-        "researchgate": "none",
-        "personal_uv": "none",
+        "semantic_scholar": null,
+        "researchgate": null,
+        "personal_uv": null,
         "linkedin": "https://www.linkedin.com/in/gonzalo-mateo-garcia/",
-        "ieee": "none",
-        "dblp": "none",
+        "ieee": null,
+        "dblp": null,
         "personal_website": "http://www.uv.es/gonmagar/",
-        "causality": "none",
-        "manifold_learning": "none"
+        "causality": null,
+        "manifold_learning": null
       }
     },
     {
@@ -129,16 +129,16 @@
         "google_scholar": "https://scholar.google.gr/citations?user=8WCaLYQAAAAJ&hl=en",
         "orcid": "https://orcid.org/0000-0001-5506-2872",
         "twitter": "https://twitter.com/vassilis_sito",
-        "github": "none",
-        "semantic_scholar": "none",
+        "github": null,
+        "semantic_scholar": null,
         "researchgate": "https://www.researchgate.net/profile/Vasileios-Sitokonstantinou",
-        "personal_uv": "none",
+        "personal_uv": null,
         "linkedin": "https://www.linkedin.com/in/vsito/",
-        "ieee": "none",
-        "dblp": "none",
-        "personal_website": "none",
-        "causality": "none",
-        "manifold_learning": "none"
+        "ieee": null,
+        "dblp": null,
+        "personal_website": null,
+        "causality": null,
+        "manifold_learning": null
       }
     },
     {
@@ -147,18 +147,18 @@
       "description": "I hold a PhD in Mathematics and am interested in applying my mathematical expertise towards utilizing manifold structures and causal relationships to develop dimensionality reduction algorithms for multimodal spatio-temporal datasets.",
       "social_networks": {
         "google_scholar": "https://scholar.google.com/citations?user=d9V9fdkAAAAJ&hl=en",
-        "orcid": "none",
-        "twitter": "none",
+        "orcid": null,
+        "twitter": null,
         "github": "https://github.com/nmank",
-        "semantic_scholar": "none",
-        "researchgate": "none",
-        "personal_uv": "none",
+        "semantic_scholar": null,
+        "researchgate": null,
+        "personal_uv": null,
         "linkedin": "https://www.linkedin.com/in/nathan-mankovich-b1293717/",
-        "ieee": "none",
-        "dblp": "none",
+        "ieee": null,
+        "dblp": null,
         "personal_website": "https://natemankovich.weebly.com/",
-        "causality": "none",
-        "manifold_learning": "none"
+        "causality": null,
+        "manifold_learning": null
       }
     },
     {
@@ -166,19 +166,19 @@
       "image": "you2.png",
       "description": "We are always looking for smart people! Send us your resume and ideas of collaboration!",
       "social_networks": {
-        "google_scholar": "none",
-        "orcid": "none",
-        "twitter": "none",
-        "github": "none",
-        "semantic_scholar": "none",
-        "researchgate": "none",
-        "personal_uv": "none",
-        "linkedin": "none",
-        "ieee": "none",
-        "dblp": "none",
-        "personal_website": "none",
-        "causality": "none",
-        "manifold_learning": "none"
+        "google_scholar": null,
+        "orcid": null,
+        "twitter": null,
+        "github": null,
+        "semantic_scholar": null,
+        "researchgate": null,
+        "personal_uv": null,
+        "linkedin": null,
+        "ieee": null,
+        "dblp": null,
+        "personal_website": null,
+        "causality": null,
+        "manifold_learning": null
       }
     },
     {
@@ -186,19 +186,19 @@
       "image": "emiliano.png",
       "description": "My research interests include kernel methods, graphical models and causality, with the focus on Earth science applications.",
       "social_networks": {
-        "google_scholar": "none",
-        "orcid": "none",
-        "twitter": "none",
-        "github": "none",
-        "semantic_scholar": "none",
-        "researchgate": "none",
-        "personal_uv": "none",
-        "linkedin": "none",
-        "ieee": "none",
-        "dblp": "none",
-        "personal_website": "none",
-        "causality": "none",
-        "manifold_learning": "none"
+        "google_scholar": null,
+        "orcid": null,
+        "twitter": null,
+        "github": null,
+        "semantic_scholar": null,
+        "researchgate": null,
+        "personal_uv": null,
+        "linkedin": null,
+        "ieee": null,
+        "dblp": null,
+        "personal_website": null,
+        "causality": null,
+        "manifold_learning": null
       }
     }
   ]
