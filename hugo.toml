@@ -4,3 +4,9 @@ publishDir = "docs"
 title = "ISP - Image and Signal Processing group"
 
 theme = "isp_uv_es"
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
