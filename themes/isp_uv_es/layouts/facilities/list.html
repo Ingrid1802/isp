@@ -1,0 +1,58 @@
+{{ define "main" }}
+<div class="content-container">
+  <h2><span class="label label-info">Facilities</span></h2>
+  <table class="table">
+    <tbody id="facilities-table-body"></tbody>
+  </table>
+</div>
+
+<style>
+  #facilities-table-body tr {
+    display: flex;
+  }
+
+  #facilities-table-body tr img {
+    margin-right: 10px;
+  }
+
+  .description-cell {
+    text-align: justify; /* Justify the text in the description cell */
+  }
+</style>
+
+<script>
+  async function loadFacilities() {
+    const response = await fetch('/isp/data/facilities/facilities.json');
+    const data = await response.json();
+
+    const tableBody = document.getElementById('facilities-table-body');
+    data.facilities.forEach((facility, index) => {
+      const row = document.createElement('tr');
+      const imageCell = document.createElement('td');
+      const descriptionCell = document.createElement('td');
+      descriptionCell.classList.add('description-cell'); 
+
+      const image = document.createElement('img');
+      image.src = '/isp/images/facilities/' + facility.image;
+      image.style.height = facility.image_size.height + 'px';
+      image.style.width = facility.image_size.width + 'px';
+      imageCell.appendChild(image);
+
+      if (facility.name) {
+        const boldName = document.createElement('b');
+        boldName.textContent = facility.name;
+        descriptionCell.appendChild(boldName);
+        descriptionCell.appendChild(document.createTextNode(' ')); // Add a space after the bold name
+      }
+
+      descriptionCell.innerHTML += facility.description;
+
+      row.appendChild(imageCell);
+      row.appendChild(descriptionCell);
+      tableBody.appendChild(row);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', loadFacilities);
+</script>
+{{ end }}

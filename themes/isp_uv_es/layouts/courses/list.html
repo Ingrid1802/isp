@@ -1,0 +1,66 @@
+{{ define "main" }}
+<div class="content-container">
+  <h2><span class="label label-info">Courses</span></h2>
+  <table class="table">
+    <tbody id="courses-table-body"></tbody>
+  </table>
+</div>
+
+<style>
+  #courses-table-body tr {
+    display: flex;
+  }
+
+  #courses-table-body tr img {
+    margin-right: 20px;
+  }
+
+  #courses-table-body tr td {
+    flex: 1; /* Use remaining space for the description cell */
+  }
+
+  #courses-table-body tr td:first-child {
+    flex: 0; /* Do not flex the image cell */
+  }
+
+  .description-cell {
+    text-align: justify; /* Justify the text in the description cell */
+  }
+</style>
+
+<script>
+  async function loadCourses() {
+    const response = await fetch('/isp/data/courses/courses.json');
+    const data = await response.json();
+
+    const tableBody = document.getElementById('courses-table-body');
+    data.courses.forEach(course => {
+      const row = document.createElement('tr');
+      const imageCell = document.createElement('td');
+      const descriptionCell = document.createElement('td');
+      descriptionCell.classList.add('description-cell'); 
+
+      const image = document.createElement('img');
+      image.src = '/isp/images/courses/' + course.image;
+      image.style.height = course.image_size.height + 'px';
+      image.style.width = course.image_size.width + 'px';
+      imageCell.appendChild(image);
+
+      if (course.name) {
+        const boldName = document.createElement('b');
+        boldName.textContent = course.name;
+        descriptionCell.appendChild(boldName);
+        descriptionCell.appendChild(document.createElement('br')); // Add a line break
+      }
+
+      descriptionCell.innerHTML += course.description;
+
+      row.appendChild(imageCell);
+      row.appendChild(descriptionCell);
+      tableBody.appendChild(row);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', loadCourses);
+</script>
+{{ end }}
