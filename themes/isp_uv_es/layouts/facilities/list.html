@@ -1,22 +1,53 @@
 {{ define "main" }}
 <div class="content-container">
   <h2><span class="label label-info">Facilities</span></h2>
-  <table class="table">
-    <tbody id="facilities-table-body"></tbody>
-  </table>
+  <br> 
+
+  <div id="facilities-container"></div>
 </div>
 
 <style>
-  #facilities-table-body tr {
+  .facility-container {
     display: flex;
+    margin-bottom: 20px; /* Espacio entre las facilidades */
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
   }
 
-  #facilities-table-body tr img {
-    margin-right: 10px;
+  .facility-container img {
+    display: block;
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    margin-bottom: 10px; /* Espacio debajo de la imagen */
+    max-width: 100%; /* Asegura que la imagen no se salga del contenedor */
+    height: auto; /* Hace que la altura se ajuste automáticamente */
   }
 
-  .description-cell {
-    text-align: justify; /* Justify the text in the description cell */
+  .facility-container .text-container {
+    flex: 1; /* Ocupará todo el espacio disponible */
+    text-align: justify;
+  }
+
+  .facility-container .text-container b {
+    display: inline-block; /* Hacer que el nombre de la facilidad esté en la misma línea */
+    margin-right: 10px; /* Espacio entre el nombre y la descripción */
+    font-weight: bold;
+  }
+
+  /* Centra la imagen en dispositivos pequeños */
+  @media (max-width: 768px) {
+    .facility-container {
+      flex-direction: column;
+      align-items: center; /* Centra los elementos horizontalmente */
+      text-align: center; /* Centra el texto */
+    }
+
+    .facility-container img {
+      margin-right: 0; /* Elimina el margen derecho */
+    }
+
+    .facility-container .text-container {
+      margin-top: 10px; /* Añade un margen superior al texto */
+    }
   }
 </style>
 
@@ -25,31 +56,30 @@
     const response = await fetch('/isp/data/facilities/facilities.json');
     const data = await response.json();
 
-    const tableBody = document.getElementById('facilities-table-body');
-    data.facilities.forEach((facility, index) => {
-      const row = document.createElement('tr');
-      const imageCell = document.createElement('td');
-      const descriptionCell = document.createElement('td');
-      descriptionCell.classList.add('description-cell'); 
+    const facilitiesContainer = document.getElementById('facilities-container');
+    data.facilities.forEach(facility => {
+      const facilityContainer = document.createElement('div');
+      facilityContainer.classList.add('facility-container');
 
       const image = document.createElement('img');
       image.src = '/isp/images/facilities/' + facility.image;
       image.style.height = facility.image_size.height + 'px';
       image.style.width = facility.image_size.width + 'px';
-      imageCell.appendChild(image);
+      facilityContainer.appendChild(image);
+
+      const textContainer = document.createElement('div');
+      textContainer.classList.add('text-container');
 
       if (facility.name) {
         const boldName = document.createElement('b');
         boldName.textContent = facility.name;
-        descriptionCell.appendChild(boldName);
-        descriptionCell.appendChild(document.createTextNode(' ')); // Add a space after the bold name
+        textContainer.appendChild(boldName);
       }
 
-      descriptionCell.innerHTML += facility.description;
+      textContainer.innerHTML += facility.description;
 
-      row.appendChild(imageCell);
-      row.appendChild(descriptionCell);
-      tableBody.appendChild(row);
+      facilityContainer.appendChild(textContainer);
+      facilitiesContainer.appendChild(facilityContainer);
     });
   }
 
