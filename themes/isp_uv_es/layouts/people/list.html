@@ -1,101 +1,99 @@
 {{ define "main" }}
-  <div class="content-container"></div>
+<div class="content-container"></div>
 
-  <script type="module">
+<script type="module">
   import Ajv from 'https://cdn.skypack.dev/ajv';
 
-    // Cargar el esquema y validar los datos JSON
-    async function validateData(filePath, schemaPath) {
-      const response = await fetch(filePath);
-      const data = await response.json();
-    
-      const schemaResponse = await fetch(schemaPath);
-      const schema = await schemaResponse.json();
+  // Cargar el esquema y validar los datos JSON
+  async function validateData(filePath, schemaPath) {
+    const response = await fetch(filePath);
+    const data = await response.json();
 
-      const ajv = new Ajv();
-      const validate = ajv.compile(schema);
+    const schemaResponse = await fetch(schemaPath);
+    const schema = await schemaResponse.json();
 
-      const valid = validate(data);
+    const ajv = new Ajv();
+    const validate = ajv.compile(schema);
 
-      if (!valid) {
-        console.error(`Error de validación en el archivo ${filePath}:`);
-        validate.errors.forEach(error => {
-          console.error(`  - En la propiedad ${error.instancePath}: ${error.message}`);
-        });
-      } else {
-        console.log('Los datos son válidos.');
-      }
+    const valid = validate(data);
+
+    if (!valid) {
+      console.error(`Error de validación en el archivo ${filePath}:`);
+      validate.errors.forEach(error => {
+        console.error(`  - En la propiedad ${error.instancePath}: ${error.message}`);
+      });
+    } else {
+      console.log('Los datos son válidos.');
     }
+  }
 
-    // Validar cada archivo JSON
-    const files = [
-      'alumni.json',
-      'assistant_professors.json',
-      'associate_professors.json',
-      'full_professors.json',
-      'phd_students.json',
-      'postdocs.json',
-      'senior_research_scientists.json',
-      'visitors.json'
+  // Validar cada archivo JSON
+  const files = [
+    'alumni.json',
+    'assistant_professors.json',
+    'associate_professors.json',
+    'full_professors.json',
+    'phd_students.json',
+    'postdocs.json',
+    'senior_research_scientists.json',
+    'visitors.json'
+  ];
+
+  const schemaPath = '/isp/schema.json';
+
+  files.forEach(file => {
+    validateData(`/isp/data/people/${file}`, schemaPath);
+  });
+</script>
+
+
+
+
+
+
+<script>
+
+  async function loadData(filePath) {
+    const response = await fetch(filePath);
+    return response.json();
+  }
+
+  async function loadAllData() {
+    const groups = [
+      "full_professors",
+      "associate_professors",
+      "assistant_professors",
+      "senior_research_scientists",
+      "postdocs",
+      "phd_students",
+      "visitors",
+      "alumni"
     ];
+    const dataBasePath = '/isp/data/people/';
 
-    const schemaPath = '/isp/schema.json';
+    for (const group of groups) {
+      const filePath = `${dataBasePath}${group}.json`;
+      const data = await loadData(filePath);
 
-    files.forEach(file => {
-      validateData(`/isp/data/people/${file}`, schemaPath);
-    });
-  </script>
-  
+      const container = document.querySelector('.content-container');
+
+      const groupTitle = document.createElement('h2');
+      groupTitle.classList.add('label', 'label-info');
+      groupTitle.textContent = data.groupTitle;
+      container.appendChild(groupTitle);
 
 
+      const cardContainer = document.createElement('div');
+      cardContainer.classList.add('card-container');
+      cardContainer.style.marginLeft = '3%';
+      container.appendChild(cardContainer);
 
+      const basePath = '/isp/images/people/';
 
-
-  <script>
-
-    async function loadData(filePath) {
-      const response = await fetch(filePath);
-      return response.json();
-    }
-
-    async function loadAllData() {
-      const groups = [
-        "full_professors", 
-        "associate_professors", 
-        "assistant_professors", 
-        "senior_research_scientists", 
-        "postdocs", 
-        "phd_students", 
-        "visitors",
-        "alumni"
-      ];
-      const dataBasePath = '/isp/data/people/';
-
-      for (const group of groups) {
-        const filePath = `${dataBasePath}${group}.json`;
-        const data = await loadData(filePath);
-
-        const container = document.querySelector('.content-container');
-
-        const groupTitle = document.createElement('h2');
-        groupTitle.style.marginBottom = '30px';
-        const label = document.createElement('span');
-        label.classList.add('label', 'label-info');
-        label.textContent = data.groupTitle;
-        groupTitle.appendChild(label);
-        container.appendChild(groupTitle);
-
-        const cardContainer = document.createElement('div');
-        cardContainer.classList.add('card-container');
-        cardContainer.style.marginLeft = '3%';
-        container.appendChild(cardContainer);
-
-        const basePath = '/isp/images/people/';
-
-        data.members.forEach(person => {
-          const card = document.createElement('div');
-          card.classList.add('card', 'mb-3');
-          card.innerHTML = `
+      data.members.forEach(person => {
+        const card = document.createElement('div');
+        card.classList.add('card', 'mb-3');
+        card.innerHTML = `
             <div class="row g-0">
               <div class="col-md-3">
                 <img src="${basePath + person.image}" class="img-fluid" alt="Imagen de ${person.name}" style="height: 200px; width:140px">
@@ -123,10 +121,10 @@
               </div>
             </div>
           `;
-          cardContainer.appendChild(card);
-        });
-      }
-    };
-    document.addEventListener('DOMContentLoaded', loadAllData);
-  </script>
+        cardContainer.appendChild(card);
+      });
+    }
+  };
+  document.addEventListener('DOMContentLoaded', loadAllData);
+</script>
 {{ end }}

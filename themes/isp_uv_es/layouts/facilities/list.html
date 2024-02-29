@@ -5,52 +5,6 @@
 
   <div id="facilities-container"></div>
 </div>
-
-<style>
-  .facility-container {
-    display: flex;
-    margin-bottom: 20px; /* Espacio entre las facilidades */
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ccc;
-  }
-
-  .facility-container img {
-    display: block;
-    margin-right: 20px; /* Espacio entre la imagen y el texto */
-    margin-bottom: 10px; /* Espacio debajo de la imagen */
-    max-width: 100%; /* Asegura que la imagen no se salga del contenedor */
-    height: auto; /* Hace que la altura se ajuste automáticamente */
-  }
-
-  .facility-container .text-container {
-    flex: 1; /* Ocupará todo el espacio disponible */
-    text-align: justify;
-  }
-
-  .facility-container .text-container b {
-    display: inline-block; /* Hacer que el nombre de la facilidad esté en la misma línea */
-    margin-right: 10px; /* Espacio entre el nombre y la descripción */
-    font-weight: bold;
-  }
-
-  /* Centra la imagen en dispositivos pequeños */
-  @media (max-width: 768px) {
-    .facility-container {
-      flex-direction: column;
-      align-items: center; /* Centra los elementos horizontalmente */
-      text-align: center; /* Centra el texto */
-    }
-
-    .facility-container img {
-      margin-right: 0; /* Elimina el margen derecho */
-    }
-
-    .facility-container .text-container {
-      margin-top: 10px; /* Añade un margen superior al texto */
-    }
-  }
-</style>
-
 <script>
   async function loadFacilities() {
     const response = await fetch('/isp/data/facilities/facilities.json');
@@ -85,4 +39,6 @@
 
   document.addEventListener('DOMContentLoaded', loadFacilities);
 </script>
+
 {{ end }}
+

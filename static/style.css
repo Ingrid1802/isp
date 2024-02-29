@@ -1,10 +1,10 @@
 body {
-  padding-top: 56px; /* ajusta este valor según el tamaño de tu barra de navegación */
+  padding-top: 56px;
 }
 
-/*estilos del archivo list.html que se encuentra en layouts/people*/
+/**********estilos del archivo list.html que se encuentra en layouts/people******************/
 .content-container {
-  max-width: 90%;
+  max-width: 85%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
@@ -19,7 +19,7 @@ body {
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Dos columnas por fila */
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
@@ -28,7 +28,7 @@ body {
 }
 
 .card-body::-webkit-scrollbar {
-  width: 5px; /* Ancho del scrollbar */
+  width: 5px;
 }
 
 .card-body::-webkit-scrollbar-thumb {
@@ -39,17 +39,16 @@ body {
 /* Para dispositivos con un ancho máximo de 768px (tablets) */
 @media (max-width: 768px) {
   .card-container {
-    grid-template-columns: 1fr; /* Una columna por fila */
+    grid-template-columns: 1fr; 
   }
 }
 
 /* Para dispositivos con un ancho máximo de 576px (celulares) */
 @media (max-width: 576px) {
   .card-container {
-    grid-template-columns: 1fr; /* Una columna por fila */
+    grid-template-columns: 1fr;
   }
 
-  /* Estilo adicional para hacer que las tarjetas ocupen toda la pantalla horizontalmente */
   .card {
     width: 100%;
     max-width: 100%;
@@ -60,13 +59,11 @@ body {
     overflow-y: initial !important; 
   }
 
-  /* Ajustar la imagen de la tarjeta para que se muestre encima del texto en lugar de al lado */
   .card .row.g-0 .col-md-3 {
     display: block;
     text-align: center;
   }
 
-    /* Ajustar el tamaño de la imagen de la tarjeta en dispositivos móviles */
   .card .row.g-0 .col-md-3 img {
     height: auto;
     max-width: 100%;
@@ -110,6 +107,76 @@ body {
 }
 
 
+/***********estilos del archivo list.html que se encuentra en layouts/facilities*******************/
+
+.facility-container {
+  display: flex;
+  margin-bottom: 20px; 
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.facility-container img {
+  display: block;
+  margin-right: 20px;
+  margin-bottom: 10px; 
+  max-width: 100%;
+  height: auto; 
+}
+
+.facility-container .text-container {
+  flex: 1; 
+  text-align: justify;
+}
+
+.facility-container .text-container b {
+  display: inline-block; 
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .facility-container {
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+  }
+
+  .facility-container img {
+    margin-right: 0; 
+  }
+
+  .facility-container .text-container {
+    margin-top: 10px;
+  }
+}
+
+
+/************ estilos de los archivo list.html que se encuentran en layouts/code y layouts/data *************/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  grid-row-gap: 10px;
+}
+
+
+.grid-item {
+  display: flex;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  padding: 10px;
+}
+
+.text {
+  flex-grow: 1;
+}
+
+.nameLink_a {
+  display: block;
+}
 
 
 
@@ -118,11 +185,16 @@ body {
 
 
 
-/*estilos de los subtitulos*/
-.label {
+
+
+
+
+
+/************estilos de los subtitulos****************/
+h2{
   display: inline;
   padding: 0.2em 0.6em 0.3em;
-  font-size: 75%;
+  font-size: 1.7em;
   font-weight: 700;
   line-height: 1;
   color: #fff;
@@ -130,11 +202,10 @@ body {
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: 0.25em;
+  background-color: #5bc0de;
+  margin-bottom: 80px;
 }
 
-.label-info {
-  background-color: #5bc0de;
-}
 
 .label-success {
   background-color: #5cb85c;
@@ -143,3 +214,73 @@ body {
 .label-warning {
   background-color: #f0ad4e;
 }
+
+
+
+/**********************estilos del archivo courses/list.html***********************/
+
+.course-container {
+  display: flex;
+  margin-bottom: 20px; 
+}
+
+.image-container {
+  margin-right: 20px;
+  text-align: center;  
+}
+
+.text-container {
+  flex: 1; 
+}
+
+.description-cell {
+  text-align: justify;
+}
+
+.download-link {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.course-container {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.image-container img {
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.text-container {
+  text-align: justify;
+}
+
+.download-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #007bff; 
+}
+
+@media (max-width: 768px) {
+.course-container {
+  flex-direction: column;
+}
+
+.image-container {
+  width: 100% !important;
+  margin-right: 0;
+  margin-bottom: 20px;
+  text-align: center; 
+}
+
+.image-container img {
+  margin: 0 auto;
+}
+
+.text-container {
+  text-align: justify;
+}
+}
+
