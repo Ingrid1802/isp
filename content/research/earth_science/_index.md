@@ -1,10 +1,12 @@
 ---
 title: "Research Earth Science"
+type: research/earth_science
 ---
 
-<h2><span class="label label-info">Earth and climate sciences</span></h2>
+# Earth and climate sciences
 <br>
-<h3><span class="label label-success">Motivation</span></h3>
+
+## Motivation
 
 **Machine learning has yielded many successful results and developments in remote sensing, geosciences and climate sciences. However, there are still strong limitations for the general adoption of machine learning algorithms for predicting and understanding the Earth and climate systems.**
 
@@ -15,7 +17,7 @@ The current statistical treatment of biophysical parameters is strongly limited 
 
 We advocate that machine learning algorithms for EO applications need to be guided both by data and by prior physical knowledge. This combination is the way to restrict the family of possible solutions and thus obtain nonparametric flexible models that respect the physical rules governing the Earth climate system. We are equally concerned about the ‘black-box' criticism to statistical learning algorithms, for which we aim to design self-explanatory models and take a leap towards the relevant concept of causal inference from empirical EO data.
 
-<h3><span class="label label-success">Challenges and approaches</span></h3>
+## Challenges and approaches
 
 Our main goal is to develop new machine learning models for the ambitious goal of modeling and understanding the Earth and climate systems with data, models and machine learning. This main scientific goal translates into the following objectives:
 
@@ -35,58 +37,4 @@ Our main goal is to develop new machine learning models for the ambitious goal o
 
 - **Discover knowledge and causal relations in Earth observation data.** We investigate graphical causal models and regression-based causal schemes applied to large heterogeneous EO data streams. This requires improved measures of (conditional) independence, designing experiments in controlled situations and using high-quality data. Learning the hierarchy of the relations between variables and related covariates, as well as their causal relations, may in turn allow the discovery of hidden essential variables, drivers and confounders. Moving from correlation to dependence and then to causation concepts is fundamental to advance the field of Earth Observation and the science of climate change.
 
-<h3><span class="label label-warning">Related projects</span></h3>
-
-<table class="table table-hover">
-    <tr>
-        <th style="width: 10%">
-            <img src="/isp/images/research/erc.png" height="70" width="80">
-        </th>
-        <th style="width: 90%">
-            <a href="https://www.usmile-erc.eu/">USMILE: Understanding and Modeling the Earth System with Machine Learning</a><br>
-            ERC Synergy Grant, PIs: V. Eyring, M. Reichstein, G. Camps-Valls, P. Gentine, 2020-2026
-        </th>
-    </tr>
-    <tr>
-        <th style="width: 10%">
-            <img src="/isp/images/research/erc.png" height="70" width="80">
-        </th>
-        <th style="width: 90%">
-            <a href="http://isp.uv.es/sedal.html">SEDAL: Statistical Learning for Earth Observation Data Analysis</a><br>
-            ERC Consolidator Grant, G. Camps-Valls, 01/15 - 12/19
-        </th>
-    </tr>
-    <tr>
-        <th style="width: 10%">
-            <img src="/isp/images/research/h2020.jpg" height="50" width="80">
-        </th>
-        <th style="width: 90%">
-            <a href="https://xaida.eu">XAIDA: Extreme Events - Artificial Intelligence for Detection and Attribution</a><br>
-            EU H2020, UV PI: Gustau Camps-Valls, 2021-2025
-        </th>
-    </tr>
-    <tr>
-        <th style="width: 10%">
-            <img src="/isp/images/research/h2020.jpg" height="50" width="80">
-        </th>
-        <th style="width: 90%">
-            <a href="https://deepcube-h2020.eu">DeepCube: Explainable AI pipelines for big Copernicus data, UV PI: Gustau Camps-Valls</a><br>
-            EU H2020, 2021-2024
-        </th>
-    </tr>
-    <tr>
-        <th style="width: 10%">
-            <img src="/isp/images/research/h2020.jpg" height="70" width="80">
-        </th>
-        <th style="width: 90%">
-            <a href="http://www.citizensensor-cost.eu">Mapping and the citizen sensor</a><br>
-            ICT COST Action, 01/13 - 12/16
-        </th>
-    </tr>
-    <tr>
-        <th style="width: 10%">
-            <img src="/isp/images/collaborators/google.png" height="70" width="80">
-        </th>
-        <th style="width: 90%">
-            <a href="projects/cdc/GEE_cloud_detection_results.html">Cloud detection in the cloud</a><br>
-            Google Earth Engine Research Award, L. Gomez-Chova, 01/16 - 12src="/isp/images/research/h2020.jpg"
+### Related projects

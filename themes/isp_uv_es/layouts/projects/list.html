@@ -14,8 +14,8 @@
     const container = document.querySelector('.content-container');
 
     // Agregar subtítulo para proyectos actuales
-    const currentProjectsTitle = document.createElement('h2');
-    currentProjectsTitle.innerHTML = '<span class="label label-info">Current projects</span>';
+    const currentProjectsTitle = document.createElement('h1');
+    currentProjectsTitle.innerHTML = 'Current projects';
     currentProjectsTitle.style.marginBottom = '20px'; // Agregar margen bottom
     container.appendChild(currentProjectsTitle);
 
@@ -36,9 +36,10 @@
     });
 
     // Agregar subtítulo para proyectos pasados
-    const pastProjectsTitle = document.createElement('h2');
-    pastProjectsTitle.innerHTML = '<span class="label label-success">Past projects</span>';
-    pastProjectsTitle.style.marginBottom = '20px'; // Agregar margen bottom
+    const pastProjectsTitle = document.createElement('h1');
+    pastProjectsTitle.innerHTML = 'Past projects';
+    pastProjectsTitle.style.marginBottom = '20px';
+    pastProjectsTitle.style.backgroundColor = '#5cb85c';
     container.appendChild(pastProjectsTitle);
 
     // Agregar proyectos pasados a la tabla
