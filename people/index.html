@@ -3,50 +3,50 @@
 <span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbarTogglerDemo01><ul class="navbar-nav mx-auto mb-lg-0"><li class="nav-item px-2" style=font-size:1.4em;margin-top:-5px;padding:.4rem><a class="nav-link active a" aria-current=page href=/isp/>ISP</a></li><li class="nav-item px-2 li nav-item-highlight"><a class="nav-link active a" aria-current=page href=/isp/people/>People</a></li><li class="nav-item dropdown px-2 nav-item-highlight"><a class="nav-link dropdown-toggle active a" href=/isp/research/ role=button data-bs-toggle=dropdown aria-expanded=false>Research</a><ul class=dropdown-menu><li><a class="dropdown-item a" href=/isp/research/machine_learning/>Machine learning</a></li><li><a class="dropdown-item a" href=/isp/research/visual_neuroscience/>Visual neuroscience</a></li><li><hr class=dropdown-divider></li><li><a class="dropdown-item a" href=/isp/research/visual_brain/>Visual brain</a></li><li><a class="dropdown-item a" href=/isp/research/earth_science/>Earth science</a></li><li><a class="dropdown-item a" href=/isp/research/social_science>Social science</a></li></ul></li><li class="nav-item px-2 nav-item-highlight"><a class="nav-link active a" aria-current=page href=/isp/projects/>Projects</a></li><li class="nav-item px-2 nav-item-highlight"><a class="nav-link active a" aria-current=page href=/isp/facilities/>Facilities</a></li><li class="nav-item dropdown px-2 nav-item-highlight"><a class="nav-link dropdown-toggle active a" href=# role=button data-bs-toggle=dropdown aria-expanded=false>Publications</a><ul class=dropdown-menu><li><a class="dropdown-item a" href=#>Journals</a></li><li><a class="dropdown-item a" href=#>Conferences</a></li><li><a class="dropdown-item a" href=#>Books</a></li><li><a class="dropdown-item a" href=#>Talks</a></li><li><hr class=dropdown-divider></li><li><a class="dropdown-item a" href=#>Technical reports</a></li><li><a class="dropdown-item a" href=#>Theses</a></li></ul></li><li class="nav-item px-2 nav-item-highlight"><a class="nav-link active a" aria-current=page href=/isp/code/>Code</a></li><li class="nav-item px-2 nav-item-highlight"><a class="nav-link active a" aria-current=page href=/isp/data/>Data</a></li><li class="nav-item px-2 nav-item-highlight"><a class="nav-link active a" aria-current=page href=/isp/seminars/>Seminars</a></li><li class="nav-item px-2 nav-item-highlight"><a class="nav-link active a" aria-current=page href=/isp/courses/>Courses</a></li><li class="nav-item px-2 nav-item-highlight"><a class="nav-link active a" aria-current=page href=/isp/collaborators/>Collaborators</a></li><li class="nav-item px-2 nav-item-highlight"><a class="nav-link active a" aria-current=page href=/isp/news/>News</a></li><li class="nav-item px-2 nav-item-highlight"><a class="nav-link active a" aria-current=page href=/isp/contact/>Contact</a></li></ul></div></div></nav><style>.navbar{--bs-navbar-padding-y:0rem !important;background-color:#222!important}.a{color:#949494!important}.a:hover{color:#fff!important}.navbar-nav .dropdown:hover .dropdown-menu{display:block}.navbar-nav .dropdown-menu:hover{display:block}.dropdown-menu{margin-top:7px}.navbar-toggler-icon{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")}.navbar-toggler{border:none}.navbar-toggler:focus{outline:none}.nav-item-highlight{padding:.4rem}.nav-item-highlight:hover{background-color:#2d70aa!important}.dropdown-menu{background-color:#fff!important;color:#000!important}.dropdown-item:hover{background-color:#2d70aa!important;color:#fff!important}.navbar-nav li.nav-item .nav-link,.dropdown-menu .dropdown-item{transition:color .3s,background-color .3s}.navbar-toggler:focus{box-shadow:none!important}</style><script>document.querySelectorAll(".dropdown-toggle").forEach(e=>{e.removeAttribute("data-bs-toggle")})</script><main><div class=content-container></div><script type=module>
   import Ajv from 'https://cdn.skypack.dev/ajv';
 
-    
-    async function validateData(filePath, schemaPath) {
-      const response = await fetch(filePath);
-      const data = await response.json();
-    
-      const schemaResponse = await fetch(schemaPath);
-      const schema = await schemaResponse.json();
+  
+  async function validateData(filePath, schemaPath) {
+    const response = await fetch(filePath);
+    const data = await response.json();
 
-      const ajv = new Ajv();
-      const validate = ajv.compile(schema);
+    const schemaResponse = await fetch(schemaPath);
+    const schema = await schemaResponse.json();
 
-      const valid = validate(data);
+    const ajv = new Ajv();
+    const validate = ajv.compile(schema);
 
-      if (!valid) {
-        console.error(`Error de validación en el archivo ${filePath}:`);
-        validate.errors.forEach(error => {
-          console.error(`  - En la propiedad ${error.instancePath}: ${error.message}`);
-        });
-      } else {
-        console.log('Los datos son válidos.');
-      }
+    const valid = validate(data);
+
+    if (!valid) {
+      console.error(`Error de validación en el archivo ${filePath}:`);
+      validate.errors.forEach(error => {
+        console.error(`  - En la propiedad ${error.instancePath}: ${error.message}`);
+      });
+    } else {
+      console.log('Los datos son válidos.');
     }
+  }
 
-    
-    const files = [
-      'alumni.json',
-      'assistant_professors.json',
-      'associate_professors.json',
-      'full_professors.json',
-      'phd_students.json',
-      'postdocs.json',
-      'senior_research_scientists.json',
-      'visitors.json'
-    ];
+  
+  const files = [
+    'alumni.json',
+    'assistant_professors.json',
+    'associate_professors.json',
+    'full_professors.json',
+    'phd_students.json',
+    'postdocs.json',
+    'senior_research_scientists.json',
+    'visitors.json'
+  ];
 
-    const schemaPath = '/isp/schema.json';
+  const schemaPath = '/isp/schema.json';
 
-    files.forEach(file => {
-      validateData(`/isp/data/people/${file}`, schemaPath);
-    });
-  </script><script>async function loadData(e){const t=await fetch(e);return t.json()}async function loadAllData(){const e=["full_professors","associate_professors","assistant_professors","senior_research_scientists","postdocs","phd_students","visitors","alumni"],t="/isp/data/people/";for(const r of e){const c=`${t}${r}.json`,i=await loadData(c),a=document.querySelector(".content-container"),s=document.createElement("h2");s.style.marginBottom="30px";const o=document.createElement("span");o.classList.add("label","label-info"),o.textContent=i.groupTitle,s.appendChild(o),a.appendChild(s);const n=document.createElement("div");n.classList.add("card-container"),n.style.marginLeft="3%",a.appendChild(n);const l="/isp/images/people/";i.members.forEach(e=>{const t=document.createElement("div");t.classList.add("card","mb-3"),t.innerHTML=`
+  files.forEach(file => {
+    validateData(`/isp/data/people/${file}`, schemaPath);
+  });
+</script><script>async function loadData(e){const t=await fetch(e);return t.json()}async function loadAllData(){const e=["full_professors","associate_professors","assistant_professors","senior_research_scientists","postdocs","phd_students","visitors","alumni"],t="/isp/data/people/";for(const a of e){const r=`${t}${a}.json`,o=await loadData(r),i=document.querySelector(".content-container"),s=document.createElement("h2");s.classList.add("label","label-info"),s.textContent=o.groupTitle,i.appendChild(s);const n=document.createElement("div");n.classList.add("card-container"),n.style.marginLeft="3%",i.appendChild(n);const c="/isp/images/people/";o.members.forEach(e=>{const t=document.createElement("div");t.classList.add("card","mb-3"),t.innerHTML=`
             <div class="row g-0">
               <div class="col-md-3">
-                <img src="${l+e.image}" class="img-fluid" alt="Imagen de ${e.name}" style="height: 200px; width:140px">
+                <img src="${c+e.image}" class="img-fluid" alt="Imagen de ${e.name}" style="height: 200px; width:140px">
               </div>
               <div class="col-md-9">
                 <div class="card-body" style="max-height: 200px; overflow-y: auto;">
