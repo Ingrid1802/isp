@@ -36,20 +36,20 @@
           <a class="nav-link active a" aria-current="page" href="/isp/facilities/">Facilities</a>
         </li>
         <li class="nav-item dropdown px-2 nav-item-highlight">
-          <a class="nav-link dropdown-toggle active a" href="#" role="button" data-bs-toggle="dropdown"
+          <a class="nav-link dropdown-toggle active a" href="/isp/publications/journal/" role="button" data-bs-toggle="dropdown"
             aria-expanded="false">
             Publications
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item a" href="#">Journals</a></li>
-            <li><a class="dropdown-item a" href="#">Conferences</a></li>
-            <li><a class="dropdown-item a" href="#">Books</a></li>
-            <li><a class="dropdown-item a" href="#">Talks</a></li>
+            <li><a class="dropdown-item a" href="/isp/publications/journal/">Journals</a></li>
+            <li><a class="dropdown-item a" href="/isp/publications/conferences/">Conferences</a></li>
+            <li><a class="dropdown-item a" href="/isp/publications/books/">Books</a></li>
+            <li><a class="dropdown-item a" href="/isp/publications/talks/">Talks</a></li>
             <li>
               <hr class="dropdown-divider">
             </li>
-            <li><a class="dropdown-item a" href="#">Technical reports</a></li>
-            <li><a class="dropdown-item a" href="#">Theses</a></li>
+            <li><a class="dropdown-item a" href="/isp/publications/technical_reports/">Technical reports</a></li>
+            <li><a class="dropdown-item a" href="/isp/publications/theses/">Theses</a></li>
           </ul>
         </li>
         <li class="nav-item px-2 nav-item-highlight">
@@ -149,4 +149,18 @@
   document.querySelectorAll('.dropdown-toggle').forEach(item => {
     item.removeAttribute('data-bs-toggle');
 });
+</script>
+<script>
+  window.onload = function() {
+    // Detectar la escala de la pantalla
+    const scale = window.devicePixelRatio;
+    
+    // Obtener la barra de navegación
+    const navbar = document.querySelector('.navbar-collapse');
+    
+    // Si la escala es mayor o igual a 1.25, agregar la clase para mostrar el menú desplegable
+    if (scale >= 1.25) {
+      navbar.classList.add('show');
+    }
+  };
 </script>
