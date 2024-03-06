@@ -5,17 +5,10 @@ body {
 
 /**********estilos del archivo list.html que se encuentra en layouts/people******************/
 .content-container {
-  max-width: 100%;
+  max-width: 89%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
-}
-
-.btn-xs {
-  padding: 1px 5px;
-  font-size: 12px;
-  line-height: 1.5;
-  border-radius: 3px;
 }
 
 .card-container {
@@ -26,20 +19,30 @@ body {
 
 .card {
   max-width: 100%;
+  --bs-card-border-color: initial;
+  --bs-card-border-radius: initial;
 }
 
-.card-body::-webkit-scrollbar {
-  width: 5px;
+.btn-xss {
+  padding: 1px 5px !important;
+  font-size: 12px !important;
+  line-height: 1.5 !important;
+  border-radius: 3px !important;
 }
 
-.card-body::-webkit-scrollbar-thumb {
-  background-color: #a7a7a7;
-  border-radius: 5px;
+.code{
+  text-decoration: none;
 }
 
-.img-fluid {
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
+.btn-info:hover {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+
+.btn-info{
+  color: #fff;
+  border-color: #269abc;
 }
 
 /* Para dispositivos con un ancho máximo de 768px (tablets) */
@@ -60,11 +63,6 @@ body {
     max-width: 100%;
   }
 
-  .card-body {
-    max-height: initial !important;
-    overflow-y: initial !important;
-  }
-
   .card .row.g-0 .col-md-3 {
     display: block;
     text-align: center;
@@ -74,11 +72,6 @@ body {
     height: auto;
     max-width: 100%;
     margin-bottom: 10px;
-  }
-
-  .img-fluid {
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
   }
 
 }
@@ -380,3 +373,19 @@ h3 {
   position: relative;
   top: -1px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,4 @@
 ---
 title: "Publications - Journal"
-type: publications/journal
+type: publications/journals
 ---

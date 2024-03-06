@@ -1,46 +1,10 @@
 {
   "data": [
     {
-      "image": "remote_sensing.jpg",
-      "name": "Remote sensing image databases",
-      "description": "",
-      "link": "data_rs.html"
-    },
-    {
       "image": "motion_after.JPG",
       "name": "Data for motion, texture and color statistics",
       "description": "(compiled at ISP to explain aftereffects)",
       "link": "after_effects/index.html"
-    },
-    {
-      "image": "data_clasif.JPG",
-      "name": "Classification database",
-      "description": "(Amsterdam object database modified at ISP for shape/texture classification)",
-      "link": "data_classification.html"
-    },
-    {
-      "image": "color_IPL.JPG",
-      "name": "Calibrated color images under controlled illumination",
-      "description": "(measured at ISP to explain spatiochromatic adaptation)",
-      "link": "data_calibrated.html"
-    },
-    {
-      "image": "barbara_a_medias.jpg",
-      "name": "Image quality",
-      "description": "(not from ISP)",
-      "link": "data_quality.html"
-    },
-    {
-      "image": "FeatureImage_vreveal1.jpg",
-      "name": "Video quality",
-      "description": "(not from ISP)",
-      "link": "data_video.html"
-    },
-    {
-      "image": "aesthetics.JPG",
-      "name": "Aesthetics database",
-      "description": "(not from ISP)",
-      "link": "data_aesthetic.html"
     }
   ]
 }
