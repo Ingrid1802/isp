@@ -4,8 +4,8 @@ type: data/generic_dataset
 subtitle: "A Benchmark Dataset for Cloud Semantic Understanding"
 logo: /isp/images/data/cloudsen12/logo.gif
 banner: /images/banner.png
-github: github.com/cloudsen12
-huggingface: huggingface.co/isp-uv-es/cloudsen12
+github: https://github.com/cloudsen12
+huggingface: https://huggingface.co/isp-uv-es/cloudsen12
 tags:
     - Sentinel-2
     - UNet
