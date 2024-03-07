@@ -8,23 +8,23 @@
       <ul class="navbar-nav mx-auto mb-lg-0">
         {{ $mainMenu := .Site.Menus.main }}
         {{ range $mainMenu }}
-          {{ if .HasChildren }}
-            <li class="nav-item dropdown px-2 nav-item-highlight">
-              <a class="nav-link dropdown-toggle active a" href="{{ .URL }}" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                {{ .Name }}
-              </a>
-              <ul class="dropdown-menu">
-                {{ range .Children }}
-                  <li><a class="dropdown-item a" href="{{ .URL }}">{{ .Name }}</a></li>
-                {{ end }}
-              </ul>
-            </li>
-          {{ else }}
-            <li class="nav-item px-2 nav-item-highlight">
-              <a class="nav-link active a" aria-current="page" href="{{ .URL }}">{{ .Name }}</a>
-            </li>
-          {{ end }}
+        {{ if .HasChildren }}
+        <li class="nav-item dropdown px-2 nav-item-highlight">
+          <a class="nav-link dropdown-toggle active a" href="{{ .URL }}" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            {{ .Name }}
+          </a>
+          <ul class="dropdown-menu">
+            {{ range .Children }}
+            <li><a class="dropdown-item a" href="{{ .URL }}">{{ .Name }}</a></li>
+            {{ end }}
+          </ul>
+        </li>
+        {{ else }}
+        <li class="nav-item px-2 nav-item-highlight">
+          <a class="nav-link active a" aria-current="page" href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
         {{ end }}
       </ul>
     </div>
@@ -34,7 +34,7 @@
 
 <style>
   .navbar {
-    --bs-navbar-padding-y: 0rem !important; 
+    --bs-navbar-padding-y: 0rem !important;
     background-color: #222 !important;
   }
 
@@ -55,7 +55,7 @@
   }
 
   .dropdown-menu {
-    margin-top: 7px; 
+    margin-top: 7px;
   }
 
   .navbar-toggler-icon {
@@ -67,13 +67,14 @@
   }
 
   .navbar-toggler:focus {
-  outline: none;
-}
+    outline: none;
+  }
 
-  .nav-item-highlight{
+  .nav-item-highlight {
     padding: 0.4rem;
   }
-  .nav-item-highlight:hover{
+
+  .nav-item-highlight:hover {
     background-color: #2d70aa !important;
   }
 
@@ -93,24 +94,88 @@
   }
 
   .navbar-toggler:focus {
-  box-shadow: none !important;
+    box-shadow: none !important;
   }
+
+
+
+
+
+
+
+
+
+  .nav-item .nav-link {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-item .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s;
+}
+
+.nav-item .nav-link:hover::after {
+  width: 100%;
+}
+
+.dropdown-menu {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: initial;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: ini;
+    border-right: initial;
+    border-bottom: initial;
+    border-left: initial;
+}
 
 </style>
 
 <script>
+document.querySelectorAll('.nav-item.dropdown').forEach(item => {
+  item.addEventListener('mouseenter', function(e) {
+    let dropdownMenu = this.querySelector('.dropdown-menu');
+    if (dropdownMenu) {
+      dropdownMenu.style.display = 'block';
+      setTimeout(() => dropdownMenu.style.opacity = 1, 0); // Asegura que la transición se ejecute después de que el display cambie a block
+    }
+  });
+
+  item.addEventListener('mouseleave', function(e) {
+    let dropdownMenu = this.querySelector('.dropdown-menu');
+    if (dropdownMenu) {
+      dropdownMenu.style.opacity = 0;
+      setTimeout(() => dropdownMenu.style.display = 'none', 500); // Asegura que el display cambie a none después de que la opacidad llegue a 0
+    }
+  });
+});
+
   document.querySelectorAll('.dropdown-toggle').forEach(item => {
     item.removeAttribute('data-bs-toggle');
-});
+  });
 </script>
 <script>
-  window.onload = function() {
+  window.onload = function () {
     // Detectar la escala de la pantalla
     const scale = window.devicePixelRatio;
-    
+
     // Obtener la barra de navegación
     const navbar = document.querySelector('.navbar-collapse');
-    
+
     // Si la escala es mayor o igual a 1.25, agregar la clase para mostrar el menú desplegable
     if (scale >= 1.25) {
       navbar.classList.add('show');

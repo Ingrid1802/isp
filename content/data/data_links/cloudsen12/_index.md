@@ -3,7 +3,7 @@ title: "CloudSEN12"
 type: data/generic_dataset
 subtitle: "A Benchmark Dataset for Cloud Semantic Understanding"
 logo: /isp/images/data/cloudsen12/logo.gif
-banner: /images/banner.png
+banner: cloudsen12/banner.png
 github: https://github.com/cloudsen12
 huggingface: https://huggingface.co/isp-uv-es/cloudsen12
 tags:
@@ -12,6 +12,67 @@ tags:
     - Cloud Detection
     - Multi-Modal
     - Remote Sensing
+authors:
+    - name: "Herrera Fernando"
+      image: "cloudsen12/authors/fernando.png"
+    - name: "Loja Jhomira"
+      image: "cloudsen12/authors/jhomira.jpeg"
+    - name: "Ysuhuaylas Luis"
+      image: "cloudsen12/authors/luis.jpeg"
+    - name: "Gonzales Karen"
+      image: "cloudsen12/authors/andrea.jpeg"
+    - name: "LLactayo Valeria"
+      image: "cloudsen12/authors/valeria.jpg"
+    - name: "Bautista Lesly"
+      image: "cloudsen12/authors/lesly.jpg"
+    - name: "Diaz Lissette"
+      image: "cloudsen12/authors/lissette.png"
+    - name: "Flores Angie"
+      image: "cloudsen12/authors/angie.jpg"
+    - name: "Cuenca Nicole"
+      image: "cloudsen12/authors/nicole.jpg"
+    - name: "Inga Joselyn"
+      image: "cloudsen12/authors/inga.jpg"
+    - name: "Espinoza Wendy"
+      image: "cloudsen12/authors/wendy.jpg"
+    - name: "Fernando Prudencio"
+      image: "cloudsen12/authors/fernando.png"
+    - name: "Yali Roy"
+      image: "cloudsen12/authors/roy.jpg"
+    - name: "Aybar Cesar"
+      image: "cloudsen12/authors/cesar.jpg"
+    - name: "Mateo-García Gonzalo"
+      image: "cloudsen12/authors/gonzalo.png"
+    - name: "Gomez-Chova Luis"
+      image: "cloudsen12/authors/gomez.png"
+    - name: "Tiede Dirk"
+      image: "cloudsen12/authors/dirk.jpg"
+    - name: "Sudmanns Martin"
+      image: "cloudsen12/authors/martin.png"
+    - name: "David Montero"
+      image: "cloudsen12/authors/david.jpg"
+examples:
+    - title: "Download CloudSEN12 using easystac"
+      link: "https://colab.research.google.com/github/cloudsen12/examples/blob/master/example01.ipynb"
+    - title: "Make a prediction using UnetMobV2 (CloudSEN12)"
+      link: "https://colab.research.google.com/github/cloudsen12/examples/blob/master/example02.ipynb"
+    - title: "CloudSEN12 and PyTorch Lightning"
+      link: "https://colab.research.google.com/github/cloudsen12/examples/blob/master/example03.ipynb"
+    - title: "Visualize CloudSEN12 using geemap"
+      link: "https://colab.research.google.com/github/cloudsen12/examples/blob/master/example04.ipynb"
+    - title: "Compare cloud masking models"
+      link: "https://colab.research.google.com/github/cloudsen12/examples/blob/master/example05.ipynb"
+    - title: "Visualize CloudSEN12 in GEE code editor"
+      link: "https://github.com/cloudsen12/examples/tree/main/js"
+citation:
+    - article_title: "CloudSEN12, a global dataset for semantic understanding of cloud and cloud shadow in Sentinel-2"
+      authors: "Aybar, Cesar and Ysuhuaylas, Luis and Loja, Jhomira and Gonzales, Karen and Herrera, Fernando and Bautista, Lesly and Yali, Roy and Flores, Angie and Diaz, Lissette and Cuenca, Nicole and others"
+      journal: "Scientific data"
+      volume: "9"
+      number: "1"
+      pages: "782"
+      year: "2022"
+      publisher: "Nature Publishing Group UK London"
 ---
 
 ## Introduction
@@ -20,56 +81,3 @@ CloudSEN12 is a LARGE dataset (~1 TB) for cloud semantic understanding that cons
 
 CloudSEN12 is designed to support both weakly and self-/semi-supervised learning strategies by including three distinct forms of hand-crafted labeling data: high-quality, scribble and no-annotation. For more details on how we created the dataset see our paper: [CloudSEN12 - a global dataset for semantic understanding of cloud and cloud shadow in Sentinel-2](https://www.nature.com/articles/s41597-022-01878-2).
 
-
-## Authors
-
-- [Herrera Fernando](/isp/images/data/cloudsen12/authors/fernando.png)
-- [Loja Jhomira](/isp/images/data/cloudsen12/authors/jhomira.jpeg)
-- [Ysuhuaylas Luis](/isp/images/data/cloudsen12/authors/luis.jpeg)
-- [Gonzales Karen](/isp/images/data/cloudsen12/authors/andrea.jpeg)
-- [LLactayo Valeria](/isp/images/data/cloudsen12/authors/valeria.jpg)
-- [Bautista Lesly](/isp/images/data/cloudsen12/authors/lesly.jpg)
-- [Diaz Lissette](/isp/images/data/cloudsen12/authors/lissette.png)
-- [Flores Angie](/isp/images/data/cloudsen12/authors/angie.jpg)
-- [Cuenca Nicole](/isp/images/data/cloudsen12/authors/nicole.jpg)
-- [Inga Joselyn](/isp/images/data/cloudsen12/authors/inga.jpg)
-- [Espinoza Wendy](/isp/images/data/cloudsen12/authors/wendy.jpg)
-- [Fernando Prudencio](/isp/images/data/cloudsen12/authors/fernando.png)
-- [Yali Roy](/isp/images/data/cloudsen12/authors/roy.jpg)
-- [Aybar Cesar](/isp/images/data/cloudsen12/authors/cesar.jpg)
-- [Mateo-García Gonzalo](/isp/images/data/cloudsen12/authors/gonzalo.png)
-- [Gomez-Chova Luis](/isp/images/data/cloudsen12/authors/gomez.png)
-- [Tiede Dirk](/isp/images/data/cloudsen12/authors/dirk.jpg)
-- [Sudmanns Martin](/isp/images/data/cloudsen12/authors/martin.png)
-- [David Montero](/isp/images/data/cloudsen12/authors/david.jpg)
-
-
-
-
-## Examples
-
-- [Download CloudSEN12 using easystac](https://colab.research.google.com/github/cloudsen12/examples/blob/master/example01.ipynb)
-
-- [Make a prediction using UnetMobV2 (CloudSEN12)](https://colab.research.google.com/github/cloudsen12/examples/blob/master/example02.ipynb)
-
-- [CloudSEN12 and PyTorch Lightning](https://colab.research.google.com/github/cloudsen12/examples/blob/master/example03.ipynb)
-
-- [Visualize CloudSEN12 using geemap](https://colab.research.google.com/github/cloudsen12/examples/blob/master/example04.ipynb)
-
-- [Compare cloud masking models](https://colab.research.google.com/github/cloudsen12/examples/blob/master/example05.ipynb)
-
-- [Visualize CloudSEN12 in GEE code editor](https://github.com/cloudsen12/examples/tree/main/js)
-
-
-## Citation
-
-@article{aybar2022cloudsen12,
-  title={CloudSEN12, a global dataset for semantic understanding of cloud and cloud shadow in Sentinel-2},
-  author={Aybar, Cesar and Ysuhuaylas, Luis and Loja, Jhomira and Gonzales, Karen and Herrera, Fernando and Bautista, Lesly and Yali, Roy and Flores, Angie and Diaz, Lissette and Cuenca, Nicole and others},
-  journal={Scientific data},
-  volume={9},
-  number={1},
-  pages={782},
-  year={2022},
-  publisher={Nature Publishing Group UK London}
-}
