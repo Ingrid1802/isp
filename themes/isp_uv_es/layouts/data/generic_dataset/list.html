@@ -159,14 +159,14 @@
     <div class="sidebar">
       <h1 class="title"><b>{{ .Params.title }}</b></h1>
       <p class="subtitle">{{ .Params.subtitle }}</p>
-      <img src="{{ .Params.logo }}" alt="Logo">
+      <img src="{{ .Params.logo }}" alt="Logo" style="display: block; margin: 0 auto;">
       <a href="{{ .Params.github }}"><i class="fab fa-github" style="font-size: 23px;"></i> GitHub</a>
       <a href="{{ .Params.huggingface }}" style="margin-left: -5px;"><img src="/isp/images/data/hf-logo.png"
           style="width: 30px; height:  30px;"> Hugging Face</a>
       <a href="/isp/data/" class="back-to-data"><i class="fa-solid fa-arrow-right-from-bracket"></i> Back to ISP</a>
       <div class="tags">
         <h3>Tags:</h3>
-        <ul style="margin-left: -15px;">
+        <ul style="margin-left: -30px;">
           {{ range .Params.tags }}
           <li>{{ . }}</li>
           {{ end }}
@@ -206,13 +206,9 @@
         </div>
         <div class="citation">
           <h2>Citation</h2>
-          {{ range .Params.citation }}
-          <p>{{ .article_title }}</p>
-          <p>{{ .authors }}</p>
-          <p>{{ .journal }}, {{ .volume }}({{ .number }}), {{ .pages }} ({{ .year }})</p>
-          <p>{{ .publisher }}</p>
-          {{ end }}
-        </div>
+          <pre style="background-color: #f2f2f2; padding: 10px; width: 100%; white-space: pre-wrap;">
+{{ .Params.citation | safeHTML }}</pre>
+      </div>
       </div>
     </div>
   </div>

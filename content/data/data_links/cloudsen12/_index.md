@@ -64,15 +64,17 @@ examples:
       link: "https://colab.research.google.com/github/cloudsen12/examples/blob/master/example05.ipynb"
     - title: "Visualize CloudSEN12 in GEE code editor"
       link: "https://github.com/cloudsen12/examples/tree/main/js"
-citation:
-    - article_title: "CloudSEN12, a global dataset for semantic understanding of cloud and cloud shadow in Sentinel-2"
-      authors: "Aybar, Cesar and Ysuhuaylas, Luis and Loja, Jhomira and Gonzales, Karen and Herrera, Fernando and Bautista, Lesly and Yali, Roy and Flores, Angie and Diaz, Lissette and Cuenca, Nicole and others"
-      journal: "Scientific data"
-      volume: "9"
-      number: "1"
-      pages: "782"
-      year: "2022"
-      publisher: "Nature Publishing Group UK London"
+citation: |
+    @article{aybar2022cloudsen12,
+      title={CloudSEN12, a global dataset for semantic understanding of cloud and cloud shadow in Sentinel-2},
+      author={Aybar, Cesar and Ysuhuaylas, Luis and Loja, Jhomira and Gonzales, Karen and Herrera, Fernando and Bautista, Lesly and Yali, Roy and Flores, Angie and Diaz, Lissette and Cuenca, Nicole and others},
+      journal={Scientific data},
+      volume={9},
+      number={1},
+      pages={782},
+      year={2022},
+      publisher={Nature Publishing Group UK London}
+    }
 ---
 
 ## Introduction
