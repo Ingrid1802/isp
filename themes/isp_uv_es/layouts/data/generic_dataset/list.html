@@ -52,13 +52,13 @@
     }
 
     .banner {
-  margin-bottom: 20px;
-  text-align: center;
-}
+      margin-bottom: 20px;
+      text-align: center;
+    }
 
-.banner img {
-  max-width: 50%;
-}
+    .banner img {
+      max-width: 50%;
+    }
 
 
     .sidebar h1 {
@@ -69,7 +69,6 @@
       max-width: 100%;
       height: auto;
       border-radius: 5px;
-      margin-bottom: 10px;
     }
 
     .sidebar a {
@@ -138,11 +137,6 @@
       background-color: #f2f2f2;
     }
 
-    .back-to-data {
-      margin-left: 5px;
-      margin-top: -6px;
-    }
-
     .examples td a {
       display: inline-block;
       width: 300px;
@@ -150,6 +144,28 @@
       text-overflow: ellipsis;
       white-space: nowrap;
       vertical-align: middle;
+    }
+
+
+    @media (max-width: 991px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .content {
+        width: 100%;
+        overflow-y: visible;
+        /* Eliminar el scroll */
+        background-color: initial;
+        box-shadow: initial;
+      }
+
     }
   </style>
 </head>
@@ -159,11 +175,14 @@
     <div class="sidebar">
       <h1 class="title"><b>{{ .Params.title }}</b></h1>
       <p class="subtitle">{{ .Params.subtitle }}</p>
-      <img src="{{ .Params.logo }}" alt="Logo" style="display: block; margin: 0 auto;">
-      <a href="{{ .Params.github }}"><i class="fab fa-github" style="font-size: 23px;"></i> GitHub</a>
-      <a href="{{ .Params.huggingface }}" style="margin-left: -5px;"><img src="/isp/images/data/hf-logo.png"
-          style="width: 30px; height:  30px;"> Hugging Face</a>
-      <a href="/isp/data/" class="back-to-data" style="margin-left: -1px;"><img src="/isp/images/isp_logo.jpg" style="width: 25px; height:  25px;"> Back to ISP</a>
+      <img src="{{ .Params.logo }}" alt="Logo" style="display: block; margin: 0 auto; margin-bottom: 5px;">
+
+      <a href="{{ .Params.github }}"><img src="/isp/images/data/github.png" style="width: 25px;"> GitHub</a>
+      <a href="{{ .Params.huggingface }}"><img src="/isp/images/data/hugging_face.png" style="width: 25px;"> Hugging
+        Face</a>
+      <a href="/isp/data/" class="back-to-data"><img src="/isp/images/data/backtoisp.png" style="width: 25px;"> Back to
+        ISP</a>
+
       <div class="tags">
         <h3>Tags:</h3>
         <ul style="margin-left: -30px;">
@@ -208,7 +227,7 @@
           <h2>Citation</h2>
           <pre style="background-color: #f2f2f2; padding: 10px; width: 100%; white-space: pre-wrap;">
 {{ .Params.citation | safeHTML }}</pre>
-      </div>
+        </div>
       </div>
     </div>
   </div>
