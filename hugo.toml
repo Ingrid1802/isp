@@ -128,3 +128,36 @@ theme = "isp_uv_es"
   name = "Contact"
   url = "/contact/"
   weight = 13
+
+
+
+
+
+
+
+
+
+
+
+#////////////////////////////// Configuracion del nav para los links de projects //////////////////////////////#
+
+[params]
+  [params.projects]
+    [params.projects.kermes]
+      title = "Kermes"
+      nav_options = [
+        { label = "KERMES", url = "/isp/projects/projects_links/kermes/" },
+        { label = "Teams", url = "/isp/projects/projects_links/kermes/teams" },
+        { label = "Meetings", url = "/isp/projects/projects_links/kermes/meetings" },
+        { label = "Soft+Data", url = "/isp/projects/projects_links/kermes/soft+data" },
+        { label = "Stays", url = "/isp/projects/projects_links/kermes/stays" }
+      ]
+    [params.projects.sedal]
+      title = "Sedal"
+      nav_options = [
+        { label = "SEDAL", url = "/isp/projects/projects_links/sedal/" },
+        { label = "People", url = "/isp/projects/projects_links/sedal/teams" },
+        { label = "Publications", url = "/isp/projects/projects_links/sedal/meetings" },
+        { label = "Activities", url = "/isp/projects/projects_links/sedal/soft+data" },
+        { label = "Documents", url = "/isp/projects/projects_linkssedals/stays" }
+      ]

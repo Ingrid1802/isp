@@ -1,0 +1,62 @@
+.navbar {
+  --bs-navbar-padding-y: 0rem !important; 
+  background-color: #222 !important;
+}
+
+.a {
+  color: #949494 !important;
+}
+
+.a:hover {
+  color: #fff !important;
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar-nav .dropdown-menu:hover {
+  display: block;
+}
+
+.dropdown-menu {
+  margin-top: 7px; 
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+outline: none;
+}
+
+.nav-item-highlight{
+  padding: 0.4rem;
+}
+.nav-item-highlight:hover{
+  background-color: #2d70aa !important;
+}
+
+.dropdown-menu {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.dropdown-item:hover {
+  background-color: #2d70aa !important;
+  color: #fff !important;
+}
+
+.navbar-nav li.nav-item .nav-link,
+.dropdown-menu .dropdown-item {
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar-toggler:focus {
+box-shadow: none !important;
+}

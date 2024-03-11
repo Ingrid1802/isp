@@ -5,7 +5,7 @@
       "image": "erc.png",
       "name": "SEDAL: Statistical Learning for Earth Observation Data Analysis",
       "description": "ERC Consolidator Grant, G. Camps-Valls, 01/09/15 - 31/08/20",
-      "link": "sedal.html",
+      "link": "/isp/projects/projects_links/sedal",
       "image_size": {
         "height": 70,
         "width": 80
@@ -63,7 +63,7 @@
       "image": "mineco.jpg",
       "name": "Red de Excelencia KERMES: Advances in kernel methods for structured data",
       "description": "Spanish Ministry of Economy and Competitiveness, TEC2016-81900-REDT, G. Camps-Valls (Coordinator) 07/17 - 07/19",
-      "link": "kermes.html",
+      "link": "/isp/projects/projects_links/kermes",
       "image_size": {
         "height": 40,
         "width": 80
