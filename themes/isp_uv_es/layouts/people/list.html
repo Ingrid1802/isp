@@ -103,7 +103,7 @@
                 <div class="card-body" style="max-height: 200px;">
                   <h5 class="card-title" style="font-size: 88.5%; margin-top:-10px"><b>${person.name}</b></h5>
                   <p class="card-text" style="font-size: 0.95em;">${truncateText(person.description, 150)}</p>
-                  <div class="card-links" style="margin-top:-1em">
+                  <div class="card-links">
                     ${person.social_networks.google_scholar && person.social_networks.google_scholar !== null ? `<a href="${person.social_networks.google_scholar}"><img src="/isp/images/people/redes/gscholar.png" height="25" width="25"></a>` : ''}
                     ${person.social_networks.orcid && person.social_networks.orcid !== null ? `<a href="${person.social_networks.orcid}"><img src="/isp/images/people/redes/orcid.png" height="25" width="25"></a>` : ''}
                     ${person.social_networks.twitter && person.social_networks.twitter !== null ? `<a href="${person.social_networks.twitter}"><img src="/isp/images/people/redes/twitter.png" height="24" width="30"></a>` : ''}

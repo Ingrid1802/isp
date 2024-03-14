@@ -10,43 +10,48 @@
 </div>
 
 <script>
-  async function loaddata() {
-    const response = await fetch('/isp/data/data/data.json');
-    const data = await response.json();
+async function loaddata() {
+  const response = await fetch('/isp/data/data/data.json');
+  const data = await response.json();
 
-    const gridContainer = document.getElementById('grid-container');
-    data.data.forEach(data => {
-      const gridItem = document.createElement('div');
-      gridItem.classList.add('grid-item');
+  const gridContainer = document.getElementById('grid-container');
+  data.data.forEach(data => {
+    const gridItem = document.createElement('div');
+    gridItem.classList.add('grid-item');
 
-      const image = document.createElement('img');
-      image.src = '/isp/images/data/' + data.image;
-      image.alt = data.name;
-      image.style.height = '100px';
-      image.style.width = '100px';
-      image.style.marginRight = '10px';
-      gridItem.appendChild(image);
+    const imageLink = document.createElement('a');
+    imageLink.href = data.link; // Enlaza la imagen al mismo destino
+    imageLink.style.textDecoration = 'none'; // Elimina el subrayado del enlace
+    const image = document.createElement('img');
+    image.src = '/isp/images/data/' + data.image;
+    image.alt = data.name;
+    image.style.height = '100px';
+    image.style.width = '100px';
+    image.style.marginRight = '10px';
+    imageLink.appendChild(image);
+    gridItem.appendChild(imageLink);
 
-      const text = document.createElement('div');
-      text.classList.add('text');
-      const nameLink = document.createElement('a');
-      nameLink.classList.add('nameLink_a');
-      nameLink.href = data.link;
-      nameLink.textContent = data.name;
-      text.appendChild(nameLink);
-      
-      if (data.description) {
-        const description = document.createElement('p');
-        description.innerHTML = data.description;
-        text.appendChild(description);
-      }
+    const text = document.createElement('div');
+    text.classList.add('text');
+    const nameLink = document.createElement('a');
+    nameLink.classList.add('nameLink_a');
+    nameLink.href = data.link;
+    nameLink.textContent = data.name;
+    text.appendChild(nameLink);
 
-      gridItem.appendChild(text);
+    if (data.description) {
+      const description = document.createElement('p');
+      description.innerHTML = data.description;
+      text.appendChild(description);
+    }
 
-      gridContainer.appendChild(gridItem);
-    });
-  }
+    gridItem.appendChild(text);
 
-  document.addEventListener('DOMContentLoaded', loaddata);
+    gridContainer.appendChild(gridItem);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', loaddata);
+
 </script>
 {{ end }}

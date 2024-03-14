@@ -9,6 +9,37 @@ News:
     url: "/noticia-2"
   - title: "The project activities started with the first Kick-off meeting in the Parc Científic of the Universitat de València on July 11th, 2017."
     url: "/noticia-3"
+
+content:
+  images:
+    - name: "Image 1"
+      path: "/isp/images/projects/kermes/logogran.png"
+      width: "80px"
+      height: "80px"
+    - name: "Image 2"
+      path: "/isp/images/projects/kermes/logo_ugr.png"
+      width: "80px"
+      height: "80px"
+    - name: "Image 3"
+      path: "/isp/images/projects/kermes/LogoUPM.png"
+      width: "80px"
+      height: "80px"
+    - name: "Image 4"
+      path: "/isp/images/projects/kermes/LogoURJC.png"
+      width: "80px"
+      height: "80px"
+    - name: "Image 5"
+      path: "/isp/images/projects/kermes/uc3m.jpg"
+      width: "80px"
+      height: "80px"
+    - name: "Image 6"
+      path: "/isp/images/projects/kermes/UAMLOGO.png"
+      width: "80px"
+      height: "70px"
+    - name: "Image 7"
+      path: "/isp/images/projects/kermes/logo_uv.png"
+      width: "80px"
+      height: "100px"
 ---
 
 # KERMES - Advances in Kernel methods for Structured Data

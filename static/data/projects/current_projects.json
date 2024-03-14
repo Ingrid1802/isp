@@ -115,7 +115,7 @@
       "image": "esa.png",
       "name": "OpenSR — Robust, accountable super-resolution for Sentinel-2 and beyond",
       "description": "ESA - Towards Explainable AI: Application to Trustworthy Super-Resolution, F. Kalaitzis (U. Oxford) L. Gómez-Chova (U. Valencia), 2022-2024",
-      "link": "https://isp.uv.es/opensr/",
+      "link": "/isp/projects/projects_links/opensr",
       "image_size": {
         "height": 50,
         "width": 90
@@ -155,7 +155,7 @@
       "image": "gva.jpg",
       "name": "AI for complex systems: Brain, Earth, Climate, Society",
       "description": "Generalitat Valenciana - Regional Ministry of Education, Research, Culture and Sport under PROMETEO programme. G. Camps-Valls, M. Piles, 2022-2026",
-      "link": "https://isp.uv.es/ai4cs",
+      "link": "/isp/projects/projects_links/ai4cs",
       "image_size": {
         "height": 50,
         "width": 90
