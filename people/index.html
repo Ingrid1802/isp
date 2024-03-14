@@ -52,7 +52,7 @@
                 <div class="card-body" style="max-height: 200px;">
                   <h5 class="card-title" style="font-size: 88.5%; margin-top:-10px"><b>${e.name}</b></h5>
                   <p class="card-text" style="font-size: 0.95em;">${truncateText(e.description,150)}</p>
-                  <div class="card-links" style="margin-top:-1em">
+                  <div class="card-links">
                     ${e.social_networks.google_scholar&&e.social_networks.google_scholar!==null?`<a href="${e.social_networks.google_scholar}"><img src="/isp/images/people/redes/gscholar.png" height="25" width="25"></a>`:""}
                     ${e.social_networks.orcid&&e.social_networks.orcid!==null?`<a href="${e.social_networks.orcid}"><img src="/isp/images/people/redes/orcid.png" height="25" width="25"></a>`:""}
                     ${e.social_networks.twitter&&e.social_networks.twitter!==null?`<a href="${e.social_networks.twitter}"><img src="/isp/images/people/redes/twitter.png" height="24" width="30"></a>`:""}
