@@ -1,5 +1,5 @@
 ---
-title: "sedal - people"
+title: "sedal"
 type: "projects/generic_projects/teams"
 
 subtitle1: 

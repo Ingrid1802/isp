@@ -4,10 +4,10 @@ type: projects/generic_projects
 
 News:
   - title: "The project activities started with the Kick-off meeting in Valencia on Feb 6th, 2023."
-    url: "/noticia-1"
+    url: "https://www.pcuv.es/es/home"
   - title: "Projecte 'Artificial Intelligence for complex systems: Brain, Earth, Climate, Society', financiat per la Conselleria de Innovación, Universidades, Ciencia y Sociedad Digital, codi: CIPROM/2021/56.
   Liderat per Gustau Camps-Valls i Maria Piles, membres de Image Signal Processing (ISP) de la Universitat de València"
-    url: "/noticia-1"
+    url: ""
 
 ---
 

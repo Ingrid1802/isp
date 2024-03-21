@@ -4,13 +4,13 @@ type: projects/generic_projects
 
 News:
   - title: "The group is growing quite a lot! New people with lots of ideas, background and expertises. Check their profiles and exciting research here!"
-    url: "#"
+    url: "/isp/people/"
   - title: "We reached an h-index of 62. Follow our research here!"
-    url: "#"
+    url: "https://scholar.google.es/citations?hl=en&user=MsMYu-IAAAAJ"
   - title: "Professor Camps-Valls was recently elevated to the grade of IEEE Fellow by the Geoscience and Remote Sensing Society, and also recognized by the Signal Processing Society."
-    url: "#"
+    url: "https://www.ieee.org/membership_services/membership/fellows/2018_elevated_fellows.pdf"
   - title: "We organize here in València the biggest IEEE remote sensing and geoscience conference, IGARSS, in 2018."
-    url: "#"
+    url: "https://www.igarss2018.org/"
 
 content:
   address: |

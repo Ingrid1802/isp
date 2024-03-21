@@ -4,15 +4,15 @@ type: projects/generic_projects
 
 News:
   - title: "ESA project Towards Explainable AI: Application to Trustworthy Super-Resolution"
-    url: "/noticia-1"
+    url: "https://eo4society.esa.int/projects/opensr/"
   - title: "The project activities started with the Kick-off meeting on May 18th, 2022."
-    url: "/noticia-1"
+    url: "https://eo4society.esa.int/projects/opensr/"
   - title: "Freddie Kalaitzis and Nicolas Longepe discussed about 'Demystifying Super Resolution in EO: Hype or Hope?' at the ESA Living Planet Symposium (LPS2022)."
-    url: "/noticia-1"
+    url: "https://lps22.eu/"
   - title: "Cesar Aybar and Simon Donike have joined the OpenSR team at the Image Processing Laboratory (ISP-UV)."
-    url: "/noticia-1"
+    url: "/isp/people/"
   - title: "Follow us"
-    url: "/noticia-1"
+    url: "https://twitter.com/EOpensr"
     icon: "fa-brands fa-x-twitter"
 ---
 
